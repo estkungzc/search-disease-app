@@ -1,10 +1,10 @@
 # Search Disease App
 
-# Requirements
+## Requirements
 
 - Python 3.8
 
-# Local development
+## Local development
 
 - To Run project
 
@@ -12,6 +12,6 @@
 streamlit run .\app.py
 ```
 
-# Reference
+## Reference
 
 - Style for my wep app: https://share.streamlit.io/streamlit/example-app-bert-keyword-extractor/main/app.py

@@ -1,0 +1,74 @@
+disease,gene_id,gene_symbol,gene_name
+Bipolar Disorder,7494,XBP1,MAFD7
+Coronary Artery Disease,4205,MEF2A,
+Coronary Artery Disease,4040,LRP6,
+Coronary Artery Disease,1524,CX3CR1,
+Coronary Artery Disease,8997,KALRN,
+Coronary Artery Disease,4314,MMP3,
+Coronary Artery Disease,948,CD36,
+Crohn's Disease,64127,NOD2,
+Crohn's Disease,6583,SLC22A4,polymorphism
+Crohn's Disease,6584,SLC22A5,polymorphism
+Crohn's Disease,9966,TNFSF15,polymorphism
+Crohn's Disease,149233,IL23R,polymorphism
+Crohn's Disease,55054,ATG16L1,polymorphism
+Crohn's Disease,345611,IRGM,polymorphism
+Crohn's Disease,3588,IL10RB,
+Crohn's Disease,3587,IL10RA,
+Hypertension,1585,CYP11B2,
+Hypertension,1584,CYP11B1,
+Hypertension,3291,HSD11B2,
+Hypertension,4306,NR3C2,
+Hypertension,6338,SCNN1B,
+Hypertension,6340,SCNN1G,
+Rheumatoid Arthritis,3123,HLA-DRB1,
+Rheumatoid Arthritis,26191,PTPN22,
+Rheumatoid Arthritis,4261,CIITA,
+Rheumatoid Arthritis,51744,CD244,
+Rheumatoid Arthritis,6583,SLC22A4,
+Rheumatoid Arthritis,3663,IRF5,
+Rheumatoid Arthritis,4795,NFKBIL1,
+Rheumatoid Arthritis,3586,IL10,
+Rheumatoid Arthritis,3569,IL6,JIA
+Rheumatoid Arthritis,4282,MIF,JIA
+"Diabetes Mellitus, Type 1",3123,HLA-DRB1,polymorphism
+"Diabetes Mellitus, Type 1",3119,HLA-DQB1,polymorphism
+"Diabetes Mellitus, Type 1",3117,HLA-DQA1,polymorphism
+"Diabetes Mellitus, Type 1",3630,INS,polymorphism
+"Diabetes Mellitus, Type 1",1493,CTLA-4,polymorphism
+"Diabetes Mellitus, Type 1",26191,PTPN22,polymorphism
+"Diabetes Mellitus, Type 1",3559,IL-2RA,polymorphism
+"Diabetes Mellitus, Type 1",5771,PTPN2,polymorphism
+"Diabetes Mellitus, Type 1",2065,ERBB3,polymorphism
+"Diabetes Mellitus, Type 1",3558,IL2,intergenic region polymorphism
+"Diabetes Mellitus, Type 1",59067,IL21,intergenic region polymorphism
+"Diabetes Mellitus, Type 1",64135,IFIH1,polymorphism
+"Diabetes Mellitus, Type 1",23274,CLEC16A,polymorphism
+"Diabetes Mellitus, Type 1",60468,BACH2,polymorphism
+"Diabetes Mellitus, Type 1",5588,PRKCQ,polymorphism
+"Diabetes Mellitus, Type 1",1512,CTSH,polymorphism
+"Diabetes Mellitus, Type 1",114904,C1QTNF6,polymorphism
+"Diabetes Mellitus, Type 1",10019,SH2B3,polymorphism
+"Diabetes Mellitus, Type 1",80018,C12orf30,polymorphism
+"Diabetes Mellitus, Type 1",10666,CD226,polymorphism
+"Diabetes Mellitus, Type 1",3710,ITPR3,polymorphism
+"Diabetes Mellitus, Type 1",1594,CYP27B1,polymorphism
+"Diabetes Mellitus, Type 2",1029,CDKN2A,polymorphism
+"Diabetes Mellitus, Type 2",1030,CDKN2B,polymorphism
+"Diabetes Mellitus, Type 2",10644,IGF2BP2,polymorphism
+"Diabetes Mellitus, Type 2",11132,CAPN10,polymorphism
+"Diabetes Mellitus, Type 2",169026,SLC30A8,polymorphism
+"Diabetes Mellitus, Type 2",221895,JAZF1,polymorphism
+"Diabetes Mellitus, Type 2",3087,HHEX,polymorphism
+"Diabetes Mellitus, Type 2",3767,KCNJ11,polymorphism
+"Diabetes Mellitus, Type 2",3784,KCNQ1,polymorphism
+"Diabetes Mellitus, Type 2",4544,MTNR1B,polymorphism
+"Diabetes Mellitus, Type 2",4853,NOTCH2,polymorphism
+"Diabetes Mellitus, Type 2",5167,ENPP1,polymorphism
+"Diabetes Mellitus, Type 2",5468,PPARG,polymorphism
+"Diabetes Mellitus, Type 2",54901,CDKAL1,polymorphism
+"Diabetes Mellitus, Type 2",56999,ADAMTS9,polymorphism
+"Diabetes Mellitus, Type 2",6928,HNF1B,polymorphism
+"Diabetes Mellitus, Type 2",6934,TCF7L2,polymorphism
+"Diabetes Mellitus, Type 2",7466,WFS1,polymorphism
+"Diabetes Mellitus, Type 2",79068,FTO,polymorphism

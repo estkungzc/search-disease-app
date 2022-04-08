@@ -1,0 +1,33 @@
+path:hsa,name,path_type,disease
+hsa04514,Cell adhesion molecules (CAMs),,Bipolar disorder
+hsa04530,Tight junction,,Bipolar disorder
+hsa04928,"Parathyroid hormone synthesis, secretion and action",Related pathway,Coronary Artery Disease
+hsa04022,cGMP-PKG signaling pathway,Related pathway,Coronary Artery Disease
+hsa04310,Wnt signaling pathway,Related pathway,Coronary Artery Disease
+hsa04621,NOD-like receptor signaling pathway,Related pathway,Crohn's Disease
+hsa04060,Cytokine-cytokine receptor interaction,Related pathway,Crohn's Disease
+hsa04630,Jak-STAT signaling pathway,Related pathway,Crohn's Disease
+hsa05321,Inflammatory bowel disease,Related pathway,Crohn's Disease
+hsa04140,Regulation of autophagy,Related pathway,Crohn's Disease
+hsa04925,Aldosterone synthesis and secretion,Related pathway,Hypertension
+hsa04960,Aldosterone-regulated sodium reabsorption,Related pathway,Hypertension
+hsa05323,Rheumatoid arthritis,Pathway,Rheumatoid Arthritis
+hsa04612,Antigen processing and presentation,Related pathway,Rheumatoid Arthritis
+hsa04620,Toll-like receptor signaling pathway,Related pathway,Rheumatoid Arthritis
+hsa04625,C-type lectin receptor signaling pathway,Related pathway,Rheumatoid Arthritis
+hsa04659,Th17 cell differentiation,Related pathway,Rheumatoid Arthritis
+hsa04940,Type I diabetes mellitus,Pathway,"Diabetes Mellitus, Type 1"
+hsa04060,Cytokine-cytokine receptor interaction,Related pathway,"Diabetes Mellitus, Type 1"
+hsa04630,JAK-STAT signaling pathway,Related pathway,"Diabetes Mellitus, Type 1"
+hsa04151,PI3K-Akt signaling pathway,Related pathway,"Diabetes Mellitus, Type 1"
+hsa04612,Antigen processing and presentation,Related pathway,"Diabetes Mellitus, Type 1"
+hsa04930,Type II diabetes mellitus,Pathway,"Diabetes Mellitus, Type 2"
+hsa04110,Cell cycle,Related pathway,"Diabetes Mellitus, Type 2"
+hsa04115,p53 signaling pathway,Related pathway,"Diabetes Mellitus, Type 2"
+hsa04350,TGF-beta signaling pathway,Related pathway,"Diabetes Mellitus, Type 2"
+hsa04911,Insulin secretion,Related pathway,"Diabetes Mellitus, Type 2"
+hsa04972,Pancreatic secretion,Related pathway,"Diabetes Mellitus, Type 2"
+hsa04330,Notch signaling pathway,Related pathway,"Diabetes Mellitus, Type 2"
+hsa03320,PPAR signaling pathway,Related pathway,"Diabetes Mellitus, Type 2"
+hsa04310,Wnt signaling pathway,Related pathway,"Diabetes Mellitus, Type 2"
+hsa04141,Protein processing in endoplasmic reticulum,Related pathway,"Diabetes Mellitus, Type 2"

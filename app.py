@@ -1,9 +1,8 @@
-from multiprocessing.pool import ThreadPool
 import streamlit as st
 import numpy as np
 import pandas as pd
+import re
 
-from collections import OrderedDict
 
 from src.data.load_data import (
     load_disease_from_huge,
@@ -15,14 +14,40 @@ from src.data.load_data import (
 from src.data.ncbi_scraping import get_all_genes_info
 
 from st_aggrid import AgGrid
-from src.processing.ncbi_info import merge_gene_symbol
-from src.processing.pathway import get_pathway_by_genes
 
 from src.utils.data_table import get_base_grid_options
+
+import streamlit_authenticator as stauth
 
 st.set_page_config(
     page_title="Search Disease", page_icon="🍫",
 )
+
+
+names = [st.secrets["app_credentials"]["name"]]
+usernames = [st.secrets["app_credentials"]["username"]]
+passwords = [st.secrets["app_credentials"]["password"]]
+
+
+hashed_passwords = stauth.Hasher(passwords).generate()
+authenticator = stauth.Authenticate(
+    names,
+    usernames,
+    hashed_passwords,
+    "some_cookie_name",
+    "some_signature_key",
+    cookie_expiry_days=30,
+)
+
+with st.sidebar:
+    name, authentication_status, username = authenticator.login("Login", "main")
+    if authentication_status:
+        authenticator.logout("Logout", "main")
+        st.write("Welcome *%s*" % (name))
+    elif authentication_status == False:
+        st.error("Username/password is incorrect")
+    elif authentication_status == None:
+        st.warning("Please enter your username and password")
 
 
 def _max_width_():
@@ -62,6 +87,9 @@ with st.expander("ℹ️ - About this app", expanded=True):
 
     st.markdown("")
 
+if not authentication_status:
+    st.stop()
+
 st.markdown("")
 st.markdown("## **📌 Paste data **")
 with st.form(key="my_form"):
@@ -89,20 +117,17 @@ with st.form(key="my_form"):
         )
 
         st.subheader("Disease")
-        if not "diseases_list" in st.session_state:
-            st.session_state.diseases_list = OrderedDict(
-                [
-                    ("Bipolar disorder", True),
-                    ("Coronary artery disease", True),
-                    ("Crohn disease", True),
-                    ("High blood pressure", True),
-                    ("Rheumatoid arthritis", True),
-                    ("Type 1 diabetes mellitus", True),
-                    ("Type 2 diabetes mellitus", True),
-                ]
-            )
-        for key, value in st.session_state.diseases_list.items():
-            st.checkbox(key, value)
+        st.write(
+            """     
+            ✅ Bipolar disorder \n
+            ✅ Coronary artery disease \n
+            ✅ Crohn disease \n
+            ✅ High blood pressure \n
+            ✅ Rheumatoid arthritis \n
+            ✅ Type 1 diabetes mellitus \n
+            ✅ Type 2 diabetes mellitus
+            """
+        )
 
     with c2:
         uploaded_file = st.file_uploader(
@@ -113,8 +138,11 @@ with st.form(key="my_form"):
         )
 
         st.markdown("")
+        snp_input = st.text_area("Input rs ID", height=500)
+        st.markdown("")
         submit_button = st.form_submit_button(label="✨ Get me the data!")
 
+        shows = None
         if uploaded_file is not None:
             file_container = st.expander("Check your uploaded .csv")
             shows = pd.read_csv(uploaded_file)
@@ -123,12 +151,19 @@ with st.form(key="my_form"):
             st.info(f"Found : {len(shows)} records")
 
 
-if not (submit_button and uploaded_file):
+if not (submit_button and (uploaded_file or snp_input)):
     st.stop()
+
+
+# ░█▀▀█ █▀▀ █▀▀ █──█ █── ▀▀█▀▀ █▀▀
+# ░█▄▄▀ █▀▀ ▀▀█ █──█ █── ──█── ▀▀█
+# ░█─░█ ▀▀▀ ▀▀▀ ─▀▀▀ ▀▀▀ ──▀── ▀▀▀
 
 st.header("")
 st.markdown("## **🎈 Results **")
+st.markdown("")
 
+# load all local data
 data = load_mapping_dataset()
 disease_huge_data = load_disease_from_huge()
 disease_kegg_data = load_disease_from_kegg()
@@ -137,45 +172,46 @@ pathway_kegg_data = load_pathway_from_kegg()
 disease_pathway_kegg_data = load_disease_pathway_from_kegg()
 
 
-if all(item in shows.columns for item in ["Probe Set ID", "dbSNP RS ID"]):
-    selected_data = data[
-        data["Probe Set ID"].isin(shows["Probe Set ID"])
-        | data["dbSNP RS ID"].isin(shows["dbSNP RS ID"])
-    ]
-elif {"Probe Set ID"}.issubset(shows.columns):
-    selected_data = data[data["Probe Set ID"].isin(shows["Probe Set ID"])]
-elif {"dbSNP RS ID"}.issubset(shows.columns):
-    selected_data = data[data["dbSNP RS ID"].isin(shows["dbSNP RS ID"])]
-else:
-    st.error("No Probe Set ID or dbSNP RS ID found in the data")
-    st.stop()
+filter_data = None
 
-# filter bound of region (upstream and downstream)
-is_inbound_upstream = (selected_data["region"] == "upstream") & (
-    selected_data["distance"] <= upstream_threshold
-)
-is_inbound_downstream = (selected_data["region"] == "downstream") & (
-    selected_data["distance"] <= downstream_threshold
-)
-selected_data = selected_data[
-    is_inbound_upstream
-    | is_inbound_downstream
-    | (~selected_data["region"].isin(["upstream", "downstream"]))
-]
+if shows is not None:
+    if all(item in shows.columns for item in ["Probe Set ID", "dbSNP RS ID"]):
+        # selected_data = data[
+        #     data["Probe Set ID"].isin(shows["Probe Set ID"])
+        #     | data["dbSNP RS ID"].isin(shows["dbSNP RS ID"])
+        # ]
+        filter_data = data["Probe Set ID"].isin(shows["Probe Set ID"]) | data[
+            "dbSNP RS ID"
+        ].isin(shows["dbSNP RS ID"])
+    elif {"Probe Set ID"}.issubset(shows.columns):
+        # selected_data = data[data["Probe Set ID"].isin(shows["Probe Set ID"])]
+        filter_data = data["Probe Set ID"].isin(shows["Probe Set ID"])
+    elif {"dbSNP RS ID"}.issubset(shows.columns):
+        # selected_data = data[data["dbSNP RS ID"].isin(shows["dbSNP RS ID"])]
+        filter_data = data["dbSNP RS ID"].isin(shows["dbSNP RS ID"])
+    else:
+        st.error("No Probe Set ID or dbSNP RS ID found in the data")
+        st.stop()
+
+if snp_input:
+    snp_list = re.split("; |, |\n| ", snp_input)
+
+    if snp_list:
+        snp_list = set(snp_list)
+        selected_from_snp_data = data["dbSNP RS ID"].isin(snp_list) | data[
+            "Probe Set ID"
+        ].isin(snp_list)
+        if filter_data is not None:
+            filter_data = filter_data | selected_from_snp_data
+        else:
+            filter_data = selected_from_snp_data
+
+selected_data = data[filter_data]
+
+print(selected_data)
+
+
 selected_data["gene_id"] = selected_data["gene_id"].astype(str)
-
-
-# selected_data = selected_data.append(
-#     [{"gene_id": g} for g in (["3123", "3119", "3117", "3630"] + ["1585"])],
-#     ignore_index=True,
-# )
-
-st.subheader("Mapping from selected to dataset 🔎")
-AgGrid(
-    selected_data,
-    gridOptions=get_base_grid_options(selected_data, "Probe Set ID"),
-    enable_enterprise_modules=True,
-)
 
 
 def update_discontinued_genes_info():
@@ -216,54 +252,301 @@ else:
         )
         update_discontinued_genes_info()
 
-
-st.subheader("List of genes selected that search on NCBI 🔍")
-gene_ncbi_info_selected = st.session_state.gene_nbci_info[
-    st.session_state.gene_nbci_info["Gene Id"].isin(
-        selected_data["gene_id"].astype(str)
+# update discontinued genes info in raw data
+v = st.session_state.gene_nbci_info[
+    ~st.session_state.gene_nbci_info["Replaced with Gene ID"].isna()
+]
+for index, row in v.iterrows():
+    new_data = st.session_state.gene_nbci_info[
+        st.session_state.gene_nbci_info["Gene Id"] == row["Replaced with Gene ID"]
+    ].iloc[0]
+    selected_data["gene_symbol"] = np.where(
+        selected_data["gene_id"] == row["Gene Id"],
+        new_data["Official Symbol"],
+        selected_data["gene_symbol"],
     )
+    selected_data["gene_id"] = np.where(
+        selected_data["gene_id"] == row["Gene Id"],
+        new_data["Gene Id"],
+        selected_data["gene_id"],
+    )
+
+
+# ░█▀▄▀█ █▀▀█ █▀▀█ █▀▀█ ─▀─ █▀▀▄ █▀▀▀ 　 █▀▀ █▀▀█ █▀▀█ █▀▄▀█ 　 █▀▀ █▀▀ █── █▀▀ █▀▀ ▀▀█▀▀ █▀▀ █▀▀▄ 　 ▀▀█▀▀ █▀▀█
+# ░█░█░█ █▄▄█ █──█ █──█ ▀█▀ █──█ █─▀█ 　 █▀▀ █▄▄▀ █──█ █─▀─█ 　 ▀▀█ █▀▀ █── █▀▀ █── ──█── █▀▀ █──█ 　 ──█── █──█
+# ░█──░█ ▀──▀ █▀▀▀ █▀▀▀ ▀▀▀ ▀──▀ ▀▀▀▀ 　 ▀── ▀─▀▀ ▀▀▀▀ ▀───▀ 　 ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ──▀── ▀▀▀ ▀▀▀─ 　 ──▀── ▀▀▀▀
+
+# █▀▀▄ █▀▀█ ▀▀█▀▀ █▀▀█ █▀▀ █▀▀ ▀▀█▀▀
+# █──█ █▄▄█ ──█── █▄▄█ ▀▀█ █▀▀ ──█──
+# ▀▀▀─ ▀──▀ ──▀── ▀──▀ ▀▀▀ ▀▀▀ ──▀──
+
+gene_ncbi_info_repr = pd.merge(
+    st.session_state.gene_nbci_info,
+    selected_data,
+    left_on=["Gene Id"],
+    right_on=["gene_id"],
+)
+
+
+def is_snp_within_gene(snp):
+
+    is_within_upstream_threshold = (
+        snp["region"] == "upstream" and snp["distance"] <= upstream_threshold
+    )
+    is_within_downstream_threshold = (
+        snp["region"] == "downstream" and snp["distance"] <= downstream_threshold
+    )
+
+    return (
+        "Y"
+        if (
+            (is_within_upstream_threshold or is_within_downstream_threshold)
+            or (snp["region"] not in ["upstream", "downstream"])
+        )
+        else "N"
+    )
+
+
+gene_ncbi_info_repr["Is SNP's near or within a gene"] = gene_ncbi_info_repr.apply(
+    is_snp_within_gene, axis=1
+)
+
+gene_ncbi_info_repr = gene_ncbi_info_repr.drop("gene_id", axis=1)
+gene_ncbi_info_repr = gene_ncbi_info_repr[
+    [
+        "Probe Set ID",
+        "dbSNP RS ID",
+        "Gene Id",
+        "Official Symbol",
+        "region",
+        "distance",
+        "Official Full Name",
+        "Also known as",
+        "Is SNP's near or within a gene",
+    ]
 ]
-AgGrid(
-    gene_ncbi_info_selected,
-    gridOptions=get_base_grid_options(gene_ncbi_info_selected),
-    enable_enterprise_modules=True,
-)
 
-
-# genes list for search on HuGE
-genes_list = gene_ncbi_info_selected.apply(merge_gene_symbol, axis=1).explode().unique()
-
-st.subheader("Gene that found on Disease (HuGE) 😎")
-disease_huge_include_gene = disease_huge_data[
-    disease_huge_data["Gene"].isin(genes_list)
+snp_within_genes = gene_ncbi_info_repr[
+    gene_ncbi_info_repr["Is SNP's near or within a gene"] == "Y"
 ]
-AgGrid(
-    disease_huge_include_gene,
-    gridOptions=get_base_grid_options(disease_huge_include_gene, "Disease"),
-    enable_enterprise_modules=True,
-)
 
-
-st.subheader("Gene that found on Disease (KEGG) 🤧")
-disease_kegg_include_gene = disease_kegg_data[
-    disease_kegg_data["gene_symbol"].isin(genes_list)
+# columns for represent report HuGE, KEGG
+COLUMNS_LIST_VIEW = [
+    "Probe Set ID",
+    "dbSNP RS ID",
+    "Disease",
+    "Gene Id",
+    "Official Symbol",
+    "region",
+    "distance",
+    "Also known as",
+    "Gene (report on disease)",
+    # "Is SNP's near or within a gene",
 ]
+
+# ░█▀▀█ █▀▀ █▀▀▄ █▀▀ 　 ▀▀█▀▀ █──█ █▀▀█ ▀▀█▀▀ 　 █▀▀ █▀▀ █▀▀█ █▀▀█ █▀▀ █──█ 　 █▀▀█ █▀▀▄
+# ░█─▄▄ █▀▀ █──█ █▀▀ 　 ──█── █▀▀█ █▄▄█ ──█── 　 ▀▀█ █▀▀ █▄▄█ █▄▄▀ █── █▀▀█ 　 █──█ █──█
+# ░█▄▄█ ▀▀▀ ▀──▀ ▀▀▀ 　 ──▀── ▀──▀ ▀──▀ ──▀── 　 ▀▀▀ ▀▀▀ ▀──▀ ▀─▀▀ ▀▀▀ ▀──▀ 　 ▀▀▀▀ ▀──▀
+
+# ░█▀▀▄ ─▀─ █▀▀ █▀▀ █▀▀█ █▀▀ █▀▀ 　 ▄▀ ░█─░█ █──█ ░█▀▀█ ░█▀▀▀ ▀▄
+# ░█─░█ ▀█▀ ▀▀█ █▀▀ █▄▄█ ▀▀█ █▀▀ 　 █─ ░█▀▀█ █──█ ░█─▄▄ ░█▀▀▀ ─█
+# ░█▄▄▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀──▀ ▀▀▀ ▀▀▀ 　 ▀▄ ░█─░█ ─▀▀▀ ░█▄▄█ ░█▄▄▄ ▄▀
+
+genes_info_lookup = pd.DataFrame(
+    {c: pd.Series(dtype=t) for c, t in [("gene_id", str), ("gene_symbol", str)]}
+)
+for index, row in snp_within_genes.iterrows():
+    result = {"gene_id": row["Gene Id"], "gene_symbol": row["Official Symbol"]}
+    genes_info_lookup = genes_info_lookup.append(result, ignore_index=True)
+
+    if row["Also known as"]:
+        for gene_name in row["Also known as"]:
+            result = {"gene_id": row["Gene Id"], "gene_symbol": gene_name}
+            genes_info_lookup = genes_info_lookup.append(result, ignore_index=True)
+
+genes_info_lookup = genes_info_lookup.drop_duplicates(keep=False)
+
+genes_disease_info = pd.merge(
+    genes_info_lookup,
+    disease_huge_data,
+    # how="left",
+    left_on=["gene_symbol"],
+    right_on=["Gene"],
+)
+
+genes_disease_info = genes_disease_info[genes_disease_info["Gene"].notna()]
+genes_disease_info = genes_disease_info[["gene_id", "Gene", "Disease"]]
+
+disease_huge_repr = pd.merge(
+    snp_within_genes,
+    genes_disease_info,
+    how="left",
+    left_on=["Gene Id"],
+    right_on=["gene_id"],
+)
+
+disease_huge_repr.rename(columns={"Gene": "Gene (report on disease)"}, inplace=True)
+disease_huge_repr = disease_huge_repr[COLUMNS_LIST_VIEW]
+
+# ░█▀▀█ █▀▀ █▀▀▄ █▀▀ 　 ▀▀█▀▀ █──█ █▀▀█ ▀▀█▀▀ 　 █▀▀ █▀▀ █▀▀█ █▀▀█ █▀▀ █──█ 　 █▀▀█ █▀▀▄
+# ░█─▄▄ █▀▀ █──█ █▀▀ 　 ──█── █▀▀█ █▄▄█ ──█── 　 ▀▀█ █▀▀ █▄▄█ █▄▄▀ █── █▀▀█ 　 █──█ █──█
+# ░█▄▄█ ▀▀▀ ▀──▀ ▀▀▀ 　 ──▀── ▀──▀ ▀──▀ ──▀── 　 ▀▀▀ ▀▀▀ ▀──▀ ▀─▀▀ ▀▀▀ ▀──▀ 　 ▀▀▀▀ ▀──▀
+
+# ░█▀▀▄ ─▀─ █▀▀ █▀▀ █▀▀█ █▀▀ █▀▀ 　 ▄▀ ░█─▄▀ ░█▀▀▀ ░█▀▀█ ░█▀▀█ ▀▄
+# ░█─░█ ▀█▀ ▀▀█ █▀▀ █▄▄█ ▀▀█ █▀▀ 　 █─ ░█▀▄─ ░█▀▀▀ ░█─▄▄ ░█─▄▄ ─█
+# ░█▄▄▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀──▀ ▀▀▀ ▀▀▀ 　 ▀▄ ░█─░█ ░█▄▄▄ ░█▄▄█ ░█▄▄█ ▄▀
+
+genes_disease_kegg_info = pd.merge(
+    snp_within_genes,
+    disease_kegg_data,
+    how="left",
+    left_on=["Gene Id"],
+    right_on=["gene_id"],
+)
+genes_disease_kegg_info.drop(["gene_id", "gene_name"], axis=1, inplace=True)
+genes_disease_kegg_info.rename(
+    columns={"disease": "Disease", "gene_symbol": "Gene (report on disease)"},
+    inplace=True,
+)
+
+genes_disease_kegg_info = genes_disease_kegg_info[COLUMNS_LIST_VIEW]
+
+
+# ░█▀▀█ █▀▀ █▀▀▄ █▀▀ 　 ▀▀█▀▀ █──█ █▀▀█ ▀▀█▀▀ 　 █▀▀ █▀▀ █▀▀█ █▀▀█ █▀▀ █──█ 　 █▀▀█ █▀▀▄
+# ░█─▄▄ █▀▀ █──█ █▀▀ 　 ──█── █▀▀█ █▄▄█ ──█── 　 ▀▀█ █▀▀ █▄▄█ █▄▄▀ █── █▀▀█ 　 █──█ █──█
+# ░█▄▄█ ▀▀▀ ▀──▀ ▀▀▀ 　 ──▀── ▀──▀ ▀──▀ ──▀── 　 ▀▀▀ ▀▀▀ ▀──▀ ▀─▀▀ ▀▀▀ ▀──▀ 　 ▀▀▀▀ ▀──▀
+
+# ░█▀▀█ █▀▀█ ▀▀█▀▀ █──█ █───█ █▀▀█ █──█ 　 ▄▀ ░█─▄▀ ░█▀▀▀ ░█▀▀█ ░█▀▀█ ▀▄
+# ░█▄▄█ █▄▄█ ──█── █▀▀█ █▄█▄█ █▄▄█ █▄▄█ 　 █─ ░█▀▄─ ░█▀▀▀ ░█─▄▄ ░█─▄▄ ─█
+# ░█─── ▀──▀ ──▀── ▀──▀ ─▀─▀─ ▀──▀ ▄▄▄█ 　 ▀▄ ░█─░█ ░█▄▄▄ ░█▄▄█ ░█▄▄█ ▄▀
+
+pathway_kegg_data_used = pathway_kegg_data[
+    pathway_kegg_data["path:hsa"].isin(disease_pathway_kegg_data["path:hsa"])
+]
+pathway_with_info = pd.merge(
+    pathway_kegg_data_used, disease_pathway_kegg_data, on=["path:hsa"]
+)
+
+pathway_kegg_genes_with_info = pd.merge(
+    snp_within_genes,
+    pathway_with_info,
+    how="left",
+    left_on=["Gene Id"],
+    right_on=["hsa"],
+)
+pathway_kegg_genes_with_info.drop("hsa", axis=1, inplace=True)
+pathway_kegg_genes_with_info.rename(
+    columns={"name": "Pathway Name", "disease": "Disease", "path_type": "Path Type"},
+    inplace=True,
+)
+
+# ░█▀▀▀█ █──█ █▀▄▀█ █▀▄▀█ █▀▀█ █▀▀█ █──█ 　 █▀▀█ █▀▀ █▀▀█ █▀▀█ █▀▀█ ▀▀█▀▀ 　 █▀▀█ █▀▀
+# ─▀▀▀▄▄ █──█ █─▀─█ █─▀─█ █▄▄█ █▄▄▀ █▄▄█ 　 █▄▄▀ █▀▀ █──█ █──█ █▄▄▀ ──█── 　 █──█ █▀▀
+# ░█▄▄▄█ ─▀▀▀ ▀───▀ ▀───▀ ▀──▀ ▀─▀▀ ▄▄▄█ 　 ▀─▀▀ ▀▀▀ █▀▀▀ ▀▀▀▀ ▀─▀▀ ──▀── 　 ▀▀▀▀ ▀──
+
+# █▀▀ █▀▀ █── █▀▀ █▀▀ ▀▀█▀▀ █▀▀ █▀▀▄ 　 █▀▀▀ █▀▀ █▀▀▄ █▀▀ █▀▀ 　 █▀▀█ █▀▀▄ █▀▀▄
+# ▀▀█ █▀▀ █── █▀▀ █── ──█── █▀▀ █──█ 　 █─▀█ █▀▀ █──█ █▀▀ ▀▀█ 　 █▄▄█ █──█ █──█
+# ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ──▀── ▀▀▀ ▀▀▀─ 　 ▀▀▀▀ ▀▀▀ ▀──▀ ▀▀▀ ▀▀▀ 　 ▀──▀ ▀──▀ ▀▀▀─
+
+# █▀▀▄ ─▀─ █▀▀ █▀▀ █▀▀█ █▀▀ █▀▀ █▀▀
+# █──█ ▀█▀ ▀▀█ █▀▀ █▄▄█ ▀▀█ █▀▀ ▀▀█
+# ▀▀▀─ ▀▀▀ ▀▀▀ ▀▀▀ ▀──▀ ▀▀▀ ▀▀▀ ▀▀▀
+
+summary_df = snp_within_genes.copy()
+summary_df.drop("Is SNP's near or within a gene", axis=1, inplace=True)
+
+summary_df["Is reported on HuGE"] = np.where(
+    snp_within_genes["Gene Id"].isin(genes_disease_info["gene_id"]), "Y", "N",
+)
+
+genes_disease_kegg_info_found_lookup = genes_disease_kegg_info[
+    ~genes_disease_kegg_info["Disease"].isnull()
+]
+summary_df["Is reported on KEGG"] = np.where(
+    snp_within_genes["Gene Id"].isin(genes_disease_kegg_info_found_lookup["Gene Id"]),
+    "Y",
+    "N",
+)
+pathway_kegg_genes_with_info_found_lookup = pathway_kegg_genes_with_info[
+    ~pathway_kegg_genes_with_info["Disease"].isnull()
+]
+summary_df["Is reported on KEGG pathways"] = np.where(
+    snp_within_genes["Gene Id"].isin(
+        pathway_kegg_genes_with_info_found_lookup["Gene Id"]
+    ),
+    "Y",
+    "N",
+)
+
+summary_df["Is reported"] = np.where(
+    snp_within_genes["Gene Id"].isin(genes_disease_info["gene_id"])
+    | snp_within_genes["Gene Id"].isin(genes_disease_kegg_info_found_lookup["Gene Id"])
+    | snp_within_genes["Gene Id"].isin(
+        pathway_kegg_genes_with_info_found_lookup["Gene Id"]
+    ),
+    "Y",
+    "N",
+)
+
+
+# ░█─── ─▀─ █▀▀ ▀▀█▀▀ 　 █▀▀█ █▀▀ 　 █▀▀▄ █▀▀█ ▀▀█▀▀ █▀▀█ 　 ▀▀█▀▀ █▀▀█ █▀▀▄ █── █▀▀
+# ░█─── ▀█▀ ▀▀█ ──█── 　 █──█ █▀▀ 　 █──█ █▄▄█ ──█── █▄▄█ 　 ──█── █▄▄█ █▀▀▄ █── █▀▀
+# ░█▄▄█ ▀▀▀ ▀▀▀ ──▀── 　 ▀▀▀▀ ▀── 　 ▀▀▀─ ▀──▀ ──▀── ▀──▀ 　 ──▀── ▀──▀ ▀▀▀─ ▀▀▀ ▀▀▀
+
+with st.expander("List of genes selected that search on NCBI 🔍"):
+    AgGrid(
+        st.session_state.gene_nbci_info,
+        reload_data=True,
+        gridOptions=get_base_grid_options(st.session_state.gene_nbci_info),
+        enable_enterprise_modules=True,
+    )
+
+st.subheader("Mapping from selected to dataset 🔎")
 AgGrid(
-    disease_kegg_include_gene,
-    gridOptions=get_base_grid_options(disease_kegg_include_gene, "disease"),
+    gene_ncbi_info_repr,
+    reload_data=True,
+    gridOptions=get_base_grid_options(gene_ncbi_info_repr, "Probe Set ID"),
+    enable_enterprise_modules=True,
+    key="gene_ncbi_info_repr",
+)
+
+st.subheader("Summary report of selected genes and diseases 📊")
+AgGrid(
+    summary_df,
+    reload_data=True,
+    gridOptions=get_base_grid_options(summary_df, ["Probe Set ID"]),
+    enable_enterprise_modules=True,
+)
+
+st.subheader("Gene that search on Disease (HuGE) 😎")
+AgGrid(
+    disease_huge_repr,
+    reload_data=True,
+    gridOptions=get_base_grid_options(disease_huge_repr, ["Disease"]),
+    enable_enterprise_modules=True,
+)
+
+st.subheader("Gene that search on Disease (KEGG) 🤧")
+AgGrid(
+    genes_disease_kegg_info,
+    reload_data=True,
+    gridOptions=get_base_grid_options(genes_disease_kegg_info, "Disease"),
+    enable_enterprise_modules=True,
+    key="search_disease_kegg_info",
+)
+
+st.subheader("Gene that search on Pathway (KEGG) 🪶")
+AgGrid(
+    pathway_kegg_genes_with_info,
+    reload_data=True,
+    gridOptions=get_base_grid_options(pathway_kegg_genes_with_info, "Disease"),
     enable_enterprise_modules=True,
 )
 
 
-st.subheader("Gene that found on Pathway (KEGG) 🪶")
-pathway_genes_with_info = get_pathway_by_genes(
-    pathway_kegg_data, disease_pathway_kegg_data, gene_ncbi_info_selected
-)
-AgGrid(
-    pathway_genes_with_info,
-    gridOptions=get_base_grid_options(pathway_genes_with_info, "disease"),
-    enable_enterprise_modules=True,
-)
+# ░█──░█ ─▀─ █▀▀ █───█ 　 █▀▀█ █▀▀█ █───█ 　 █▀▀▄ █▀▀█ ▀▀█▀▀ █▀▀█
+# ─░█░█─ ▀█▀ █▀▀ █▄█▄█ 　 █▄▄▀ █▄▄█ █▄█▄█ 　 █──█ █▄▄█ ──█── █▄▄█
+# ──▀▄▀─ ▀▀▀ ▀▀▀ ─▀─▀─ 　 ▀─▀▀ ▀──▀ ─▀─▀─ 　 ▀▀▀─ ▀──▀ ──▀── ▀──▀
 
 with st.expander("View raw data"):
     st.subheader("HuGE navigator (Disease <-> Gene)")

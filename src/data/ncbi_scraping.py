@@ -52,7 +52,12 @@ def extract_gene_info(soup):
     #             usages[k] = v
 
     for k, v in zip(keys_list, values_list):
-        usages[k] = v
+        if k == "Gene description":
+            usages["Official Full Name"] = v
+        elif k == "Gene symbol":
+            usages["Official Symbol"] = v
+        else:
+            usages[k] = v
 
     usages["Also known as"] = (
         usages["Also known as"].split("; ") if "Also known as" in usages else None
@@ -82,8 +87,8 @@ def extract(gene_id: str):
 NCBI_COLUMNS_INFO = [
     ("Status", str),
     ("Date", "datetime64[ns]"),
-    ("Gene Id", int),
-    ("Replaced with Gene ID", int),
+    ("Gene Id", str),
+    ("Replaced with Gene ID", str),
     ("Official Symbol", str),
     ("Also known as", str),
     ("Primary source", str),
@@ -96,6 +101,8 @@ NCBI_COLUMNS_INFO = [
     ("Expression", str),
     ("Orthologs", str),
     ("NEW", str),
+    ("Official Full Name", str),
+    ("Annotation information", str),
 ]
 
 

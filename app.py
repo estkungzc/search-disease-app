@@ -209,7 +209,7 @@ if snp_input:
 
 selected_data = data[filter_data]
 
-print(selected_data)
+# print(selected_data)
 
 
 selected_data["gene_id"] = selected_data["gene_id"].astype(str)
@@ -338,7 +338,7 @@ snp_in_out_genes = []  # list of probe set id
 for group_name, df_group in snp_groups:
     gene_with_info_in_out = {}
     for row_index, row in df_group.iterrows():
-        print(row_index)
+        # print(row_index)
         if row["Official Symbol"] not in gene_with_info_in_out:
             gene_with_info_in_out[row["Official Symbol"]] = {
                 row["Is SNP's near or within a gene"]

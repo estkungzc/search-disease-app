@@ -54,10 +54,9 @@ Bipolar Disorder,AMBRA1,1
 Bipolar Disorder,ANGPT1,1
 Bipolar Disorder,ANGPT4,1
 Bipolar Disorder,ANK2,1
-Bipolar Disorder,Ank3,1
 Bipolar Disorder,ANK3,46
 Bipolar Disorder,ANKK1,1
-Bipolar Disorder,Anxty,1
+Bipolar Disorder,ANXTY,1
 Bipolar Disorder,APOB,2
 Bipolar Disorder,APOD,1
 Bipolar Disorder,APOE,7
@@ -86,7 +85,7 @@ Bipolar Disorder,AVPR1A,1
 Bipolar Disorder,AVPR1B,5
 Bipolar Disorder,AVPR2,1
 Bipolar Disorder,B3GALT5,1
-Bipolar Disorder,Bag1,1
+Bipolar Disorder,BAG1,1
 Bipolar Disorder,BCL11A,2
 Bipolar Disorder,BCL2,4
 Bipolar Disorder,BCL9,1
@@ -105,30 +104,28 @@ Bipolar Disorder,BRE,1
 Bipolar Disorder,BRP44,1
 Bipolar Disorder,BSN,2
 Bipolar Disorder,BTBD16,1
-Bipolar Disorder,C11orf41,1
-Bipolar Disorder,C12orf30,1
-Bipolar Disorder,C15orf53,2
-Bipolar Disorder,C15orf63,1
-Bipolar Disorder,C2orf65,1
-Bipolar Disorder,C3orf15,1
-Bipolar Disorder,C3orf21,1
-Bipolar Disorder,C3orf43,1
-Bipolar Disorder,C3orf59,1
-Bipolar Disorder,C6orf10,1
-Bipolar Disorder,C6orf204,2
-Bipolar Disorder,C6orf217,1
-Bipolar Disorder,C7orf23,1
-Bipolar Disorder,C7orf49,1
-Bipolar Disorder,C8orf85,1
-Bipolar Disorder,C9orf72,1
+Bipolar Disorder,C11ORF41,1
+Bipolar Disorder,C12ORF30,1
+Bipolar Disorder,C15ORF53,2
+Bipolar Disorder,C15ORF63,1
+Bipolar Disorder,C2ORF65,1
+Bipolar Disorder,C3ORF15,1
+Bipolar Disorder,C3ORF21,1
+Bipolar Disorder,C3ORF43,1
+Bipolar Disorder,C3ORF59,1
+Bipolar Disorder,C6ORF10,1
+Bipolar Disorder,C6ORF204,2
+Bipolar Disorder,C6ORF217,1
+Bipolar Disorder,C7ORF23,1
+Bipolar Disorder,C7ORF49,1
+Bipolar Disorder,C8ORF85,1
+Bipolar Disorder,C9ORF72,1
 Bipolar Disorder,CACNA1B,2
-Bipolar Disorder,Cacna1c,2
 Bipolar Disorder,CACNA1C,73
 Bipolar Disorder,CACNA1D,1
 Bipolar Disorder,CACNA1E,1
 Bipolar Disorder,CACNA2D1,1
 Bipolar Disorder,CACNA2D4,1
-Bipolar Disorder,Cacnb2,1
 Bipolar Disorder,CACNB2,4
 Bipolar Disorder,CACNB3,1
 Bipolar Disorder,CACNG2,3
@@ -205,7 +202,7 @@ Bipolar Disorder,CLEC1B,1
 Bipolar Disorder,CLINT1,1
 Bipolar Disorder,CLOCK,19
 Bipolar Disorder,CMTM8,2
-Bipolar Disorder,Cmya5,1
+Bipolar Disorder,CMYA5,1
 Bipolar Disorder,CNNM2,1
 Bipolar Disorder,CNR1,4
 Bipolar Disorder,CNR2,1
@@ -241,7 +238,7 @@ Bipolar Disorder,CRHR1,11
 Bipolar Disorder,CRHR2,4
 Bipolar Disorder,CRIPT,2
 Bipolar Disorder,CRP,5
-Bipolar Disorder,Crtc2,1
+Bipolar Disorder,CRTC2,1
 Bipolar Disorder,CRY1,3
 Bipolar Disorder,CRY2,5
 Bipolar Disorder,CSF2RB,2
@@ -259,7 +256,6 @@ Bipolar Disorder,CXCL12,1
 Bipolar Disorder,CXCR4,1
 Bipolar Disorder,CYP2D6,5
 Bipolar Disorder,CYP3A4,1
-Bipolar Disorder,CYTB,3
 Bipolar Disorder,CYTB,1
 Bipolar Disorder,CYTH4,2
 Bipolar Disorder,DAO,6
@@ -282,10 +278,9 @@ Bipolar Disorder,DGKI,1
 Bipolar Disorder,DGKZ,1
 Bipolar Disorder,DIO2,1
 Bipolar Disorder,DIRAS2,1
-Bipolar Disorder,Disc1,2
 Bipolar Disorder,DISC1,27
 Bipolar Disorder,DISP1,1
-Bipolar Disorder,DKFZp761B107,1
+Bipolar Disorder,DKFZP761B107,1
 Bipolar Disorder,DLEU2,1
 Bipolar Disorder,DLG1,5
 Bipolar Disorder,DLG2,3
@@ -352,7 +347,7 @@ Bipolar Disorder,FCGBP,1
 Bipolar Disorder,FEZ1,2
 Bipolar Disorder,FGF2,1
 Bipolar Disorder,FGFR2,1
-Bipolar Disorder,Fkbp4,1
+Bipolar Disorder,FKBP4,1
 Bipolar Disorder,FKBP5,10
 Bipolar Disorder,FMR1,3
 Bipolar Disorder,FOXN3,1
@@ -437,7 +432,6 @@ Bipolar Disorder,GRIA3,1
 Bipolar Disorder,GRIA4,2
 Bipolar Disorder,GRID1,2
 Bipolar Disorder,GRID2,1
-Bipolar Disorder,Grik1,1
 Bipolar Disorder,GRIK1,1
 Bipolar Disorder,GRIK2,2
 Bipolar Disorder,GRIK3,3
@@ -615,7 +609,7 @@ Bipolar Disorder,MC2R,1
 Bipolar Disorder,MC5R,2
 Bipolar Disorder,MCHR1,1
 Bipolar Disorder,MCHR2,1
-Bipolar Disorder,Mctp1,1
+Bipolar Disorder,MCTP1,1
 Bipolar Disorder,MDCR,1
 Bipolar Disorder,MDD1,2
 Bipolar Disorder,MDGA1,2
@@ -631,13 +625,11 @@ Bipolar Disorder,MIR206,1
 Bipolar Disorder,MIR2113,1
 Bipolar Disorder,MIR2682,1
 Bipolar Disorder,MIR485,1
-Bipolar Disorder,Mir499,1
 Bipolar Disorder,MIR499,1
 Bipolar Disorder,MIR504,1
 Bipolar Disorder,MIR607,1
 Bipolar Disorder,MIR633,1
 Bipolar Disorder,MIR708,1
-Bipolar Disorder,Mir708,1
 Bipolar Disorder,MKLN1,1
 Bipolar Disorder,MLC1,2
 Bipolar Disorder,MLL3,1
@@ -672,14 +664,11 @@ Bipolar Disorder,NCL,1
 Bipolar Disorder,NCOA2,1
 Bipolar Disorder,NCOR2,1
 Bipolar Disorder,ND1,1
-Bipolar Disorder,ND2,4
 Bipolar Disorder,ND2,2
-Bipolar Disorder,ND3,1
 Bipolar Disorder,ND3,1
 Bipolar Disorder,ND4,1
 Bipolar Disorder,ND4L,1
 Bipolar Disorder,ND5,2
-Bipolar Disorder,ND6,1
 Bipolar Disorder,ND6,1
 Bipolar Disorder,NDE1,1
 Bipolar Disorder,NDEL1,1
@@ -829,7 +818,7 @@ Bipolar Disorder,PLCXD3,1
 Bipolar Disorder,PLD1,1
 Bipolar Disorder,PLD2,1
 Bipolar Disorder,PLEKHA5,1
-Bipolar Disorder,Plxna3,1
+Bipolar Disorder,PLXNA3,1
 Bipolar Disorder,PMCH,1
 Bipolar Disorder,PNMT,1
 Bipolar Disorder,POFUT2,1
@@ -872,7 +861,6 @@ Bipolar Disorder,PTPN5,1
 Bipolar Disorder,PTPRD,2
 Bipolar Disorder,PTPRG,1
 Bipolar Disorder,PTPRO,1
-Bipolar Disorder,Pvalb,1
 Bipolar Disorder,PVALB,1
 Bipolar Disorder,PXDNL,1
 Bipolar Disorder,PYY,1
@@ -908,7 +896,6 @@ Bipolar Disorder,RTN4,1
 Bipolar Disorder,RTN4R,1
 Bipolar Disorder,RXRA,1
 Bipolar Disorder,RXRB,1
-Bipolar Disorder,Rxrg,1
 Bipolar Disorder,RXRG,2
 Bipolar Disorder,RYR3,1
 Bipolar Disorder,S100A12,1
@@ -996,7 +983,7 @@ Bipolar Disorder,SRD5A2,1
 Bipolar Disorder,SREBF1,1
 Bipolar Disorder,SREBF2,1
 Bipolar Disorder,SRR,2
-Bipolar Disorder,Srsf5,1
+Bipolar Disorder,SRSF5,1
 Bipolar Disorder,SST,2
 Bipolar Disorder,SSTR1,1
 Bipolar Disorder,SSTR2,1
@@ -1060,7 +1047,7 @@ Bipolar Disorder,TNK2,1
 Bipolar Disorder,TNKS,1
 Bipolar Disorder,TNKS2,1
 Bipolar Disorder,TNNI3K,1
-Bipolar Disorder,Tnr,1
+Bipolar Disorder,TNR,1
 Bipolar Disorder,TP53,2
 Bipolar Disorder,TPH1,13
 Bipolar Disorder,TPH2,14
@@ -1120,10 +1107,9 @@ Bipolar Disorder,ZNF300,1
 Bipolar Disorder,ZNF385D,1
 Bipolar Disorder,ZNF536,1
 Bipolar Disorder,ZNF804A,26
-Coronary Artery Disease,A1cf,1
+Coronary Artery Disease,A1CF,1
 Coronary Artery Disease,A2M,1
-Coronary Artery Disease,ABCA1,43
-Coronary Artery Disease,Abca1,1
+Coronary Artery Disease,ABCA1,1
 Coronary Artery Disease,ABCA2,1
 Coronary Artery Disease,ABCB1,16
 Coronary Artery Disease,ABCC1,1
@@ -1214,12 +1200,11 @@ Coronary Artery Disease,APOA2,2
 Coronary Artery Disease,APOA4,14
 Coronary Artery Disease,APOA5,53
 Coronary Artery Disease,APOB,58
-Coronary Artery Disease,Apobec1,1
+Coronary Artery Disease,APOBEC1,1
 Coronary Artery Disease,APOC1,9
 Coronary Artery Disease,APOC2,4
 Coronary Artery Disease,APOC3,37
 Coronary Artery Disease,APOC4,5
-Coronary Artery Disease,Apoe,2
 Coronary Artery Disease,APOE,141
 Coronary Artery Disease,APOF,1
 Coronary Artery Disease,APOH,2
@@ -1245,7 +1230,7 @@ Coronary Artery Disease,ATG16L2,1
 Coronary Artery Disease,ATG4C,1
 Coronary Artery Disease,ATG7,1
 Coronary Artery Disease,ATHS,1
-Coronary Artery Disease,Athsq1,1
+Coronary Artery Disease,ATHSQ1,1
 Coronary Artery Disease,ATM,6
 Coronary Artery Disease,ATP2B1,4
 Coronary Artery Disease,ATP4B,1
@@ -1287,15 +1272,15 @@ Coronary Artery Disease,BTNL2,1
 Coronary Artery Disease,BTRC,1
 Coronary Artery Disease,BUD13,3
 Coronary Artery Disease,BZRAP1,1
-Coronary Artery Disease,C11orf10,1
-Coronary Artery Disease,C11orf65,1
-Coronary Artery Disease,C11orf9,1
-Coronary Artery Disease,C12orf35,1
-Coronary Artery Disease,C12orf43,2
-Coronary Artery Disease,C12orf51,1
-Coronary Artery Disease,C1orf106,1
+Coronary Artery Disease,C11ORF10,1
+Coronary Artery Disease,C11ORF65,1
+Coronary Artery Disease,C11ORF9,1
+Coronary Artery Disease,C12ORF35,1
+Coronary Artery Disease,C12ORF43,2
+Coronary Artery Disease,C12ORF51,1
+Coronary Artery Disease,C1ORF106,1
 Coronary Artery Disease,C1QTNF9,1
-Coronary Artery Disease,C21orf7,1
+Coronary Artery Disease,C21ORF7,1
 Coronary Artery Disease,C2CD4A,1
 Coronary Artery Disease,C2CD4B,1
 Coronary Artery Disease,C3,2
@@ -1304,12 +1289,12 @@ Coronary Artery Disease,C4A,2
 Coronary Artery Disease,C4B,3
 Coronary Artery Disease,C5,1
 Coronary Artery Disease,C5AR1,1
-Coronary Artery Disease,C5orf30,1
+Coronary Artery Disease,C5ORF30,1
 Coronary Artery Disease,C6,1
-Coronary Artery Disease,C6orf10,1
-Coronary Artery Disease,C6orf105,5
-Coronary Artery Disease,C9orf3,1
-Coronary Artery Disease,C9orf5,1
+Coronary Artery Disease,C6ORF10,1
+Coronary Artery Disease,C6ORF105,5
+Coronary Artery Disease,C9ORF3,1
+Coronary Artery Disease,C9ORF5,1
 Coronary Artery Disease,CACNA1C,2
 Coronary Artery Disease,CACNA1D,1
 Coronary Artery Disease,CACNA1E,1
@@ -1344,7 +1329,6 @@ Coronary Artery Disease,CCL2,23
 Coronary Artery Disease,CCL21,2
 Coronary Artery Disease,CCL5,11
 Coronary Artery Disease,CCND1,1
-Coronary Artery Disease,CCR2,7
 Coronary Artery Disease,CCR2,5
 Coronary Artery Disease,CCR3,1
 Coronary Artery Disease,CCR5,11
@@ -1365,9 +1349,7 @@ Coronary Artery Disease,CDK17,1
 Coronary Artery Disease,CDK18,1
 Coronary Artery Disease,CDKAL1,4
 Coronary Artery Disease,CDKN1B,1
-Coronary Artery Disease,Cdkn2a,1
 Coronary Artery Disease,CDKN2A,30
-Coronary Artery Disease,Cdkn2b,1
 Coronary Artery Disease,CDKN2B,33
 Coronary Artery Disease,CDKN2B-AS1,44
 Coronary Artery Disease,CDKN2BAS,1
@@ -1393,7 +1375,6 @@ Coronary Artery Disease,CMPK1,1
 Coronary Artery Disease,CNNM2,5
 Coronary Artery Disease,CNR1,2
 Coronary Artery Disease,CNTF,1
-Coronary Artery Disease,Cog2,1
 Coronary Artery Disease,COG2,13
 Coronary Artery Disease,COG5,1
 Coronary Artery Disease,COG6,1
@@ -1403,7 +1384,6 @@ Coronary Artery Disease,COL4A2,8
 Coronary Artery Disease,COL5A2,1
 Coronary Artery Disease,COMT,3
 Coronary Artery Disease,COX1,1
-Coronary Artery Disease,COX2,1
 Coronary Artery Disease,COX2,1
 Coronary Artery Disease,COX8A,7
 Coronary Artery Disease,CP,1
@@ -1607,8 +1587,8 @@ Coronary Artery Disease,GPC3,1
 Coronary Artery Disease,GPC5,1
 Coronary Artery Disease,GPD1L,1
 Coronary Artery Disease,GPR109A,1
-Coronary Artery Disease,Gpr110,1
-Coronary Artery Disease,Gpr116,1
+Coronary Artery Disease,GPR110,1
+Coronary Artery Disease,GPR116,1
 Coronary Artery Disease,GPR180,1
 Coronary Artery Disease,GPR37L1,1
 Coronary Artery Disease,GPR39,1
@@ -1732,7 +1712,7 @@ Coronary Artery Disease,INSIG2,2
 Coronary Artery Disease,INSR,1
 Coronary Artery Disease,INSRR,1
 Coronary Artery Disease,IRAK1,1
-Coronary Artery Disease,Irf2bp2,1
+Coronary Artery Disease,IRF2BP2,1
 Coronary Artery Disease,IRF5,2
 Coronary Artery Disease,IRG1,1
 Coronary Artery Disease,IRS1,11
@@ -1748,7 +1728,7 @@ Coronary Artery Disease,ITGB3,46
 Coronary Artery Disease,ITGB8,1
 Coronary Artery Disease,ITIH4,1
 Coronary Artery Disease,ITLN1,4
-Coronary Artery Disease,Jak2,1
+Coronary Artery Disease,JAK2,1
 Coronary Artery Disease,JAZF1,1
 Coronary Artery Disease,JMJD1C,1
 Coronary Artery Disease,JUN,1
@@ -1786,8 +1766,7 @@ Coronary Artery Disease,LAT2,1
 Coronary Artery Disease,LCAT,6
 Coronary Artery Disease,LCT,1
 Coronary Artery Disease,LDHA,1
-Coronary Artery Disease,LDLR,55
-Coronary Artery Disease,Ldlr,3
+Coronary Artery Disease,LDLR,3
 Coronary Artery Disease,LDLRAD1,1
 Coronary Artery Disease,LDLRAP1,1
 Coronary Artery Disease,LEP,6
@@ -1850,7 +1829,7 @@ Coronary Artery Disease,MDM4,1
 Coronary Artery Disease,MEF2A,19
 Coronary Artery Disease,MEF2C,1
 Coronary Artery Disease,MEFV,1
-Coronary Artery Disease,Mep1a,1
+Coronary Artery Disease,MEP1A,1
 Coronary Artery Disease,MGP,1
 Coronary Artery Disease,MGST1,1
 Coronary Artery Disease,MGST2,1
@@ -2039,7 +2018,6 @@ Coronary Artery Disease,PLA2G1B,2
 Coronary Artery Disease,PLA2G2A,2
 Coronary Artery Disease,PLA2G4A,1
 Coronary Artery Disease,PLA2G5,2
-Coronary Artery Disease,Pla2g7,1
 Coronary Artery Disease,PLA2G7,9
 Coronary Artery Disease,PLAT,6
 Coronary Artery Disease,PLAU,1
@@ -2224,7 +2202,6 @@ Coronary Artery Disease,SOD1,1
 Coronary Artery Disease,SOD2,5
 Coronary Artery Disease,SOD3,2
 Coronary Artery Disease,SORCS1,1
-Coronary Artery Disease,Sort1,1
 Coronary Artery Disease,SORT1,21
 Coronary Artery Disease,SOX18,1
 Coronary Artery Disease,SOX6,2
@@ -2290,7 +2267,6 @@ Coronary Artery Disease,TIMP3,1
 Coronary Artery Disease,TLL1,1
 Coronary Artery Disease,TLR1,2
 Coronary Artery Disease,TLR2,6
-Coronary Artery Disease,Tlr4,1
 Coronary Artery Disease,TLR4,22
 Coronary Artery Disease,TLR6,2
 Coronary Artery Disease,TLR8,1
@@ -2308,7 +2284,7 @@ Coronary Artery Disease,TNFRSF10B,1
 Coronary Artery Disease,TNFRSF11B,6
 Coronary Artery Disease,TNFRSF1A,2
 Coronary Artery Disease,TNFRSF1B,6
-Coronary Artery Disease,Tnfrsf21,1
+Coronary Artery Disease,TNFRSF21,1
 Coronary Artery Disease,TNFRSF4,1
 Coronary Artery Disease,TNFRSF9,1
 Coronary Artery Disease,TNFSF11,1
@@ -2330,7 +2306,7 @@ Coronary Artery Disease,TREM1,2
 Coronary Artery Disease,TREML4,1
 Coronary Artery Disease,TRIB1,6
 Coronary Artery Disease,TRIB3,1
-Coronary Artery Disease,trnK,1
+Coronary Artery Disease,TRNK,1
 Coronary Artery Disease,TRPM1,1
 Coronary Artery Disease,TRPS1,1
 Coronary Artery Disease,TSLP,1
@@ -2467,25 +2443,25 @@ Crohn's Disease,BRD7,1
 Crohn's Disease,BRWD1,1
 Crohn's Disease,BSN,7
 Crohn's Disease,BTNL2,10
-Crohn's Disease,C10orf67,1
-Crohn's Disease,C11orf30,5
-Crohn's Disease,C12orf30,1
-Crohn's Disease,C13orf31,5
-Crohn's Disease,C16orf75,1
-Crohn's Disease,C17orf37,1
-Crohn's Disease,C19orf10,1
-Crohn's Disease,C1orf106,3
-Crohn's Disease,C1orf81,1
+Crohn's Disease,C10ORF67,1
+Crohn's Disease,C11ORF30,5
+Crohn's Disease,C12ORF30,1
+Crohn's Disease,C13ORF31,5
+Crohn's Disease,C16ORF75,1
+Crohn's Disease,C17ORF37,1
+Crohn's Disease,C19ORF10,1
+Crohn's Disease,C1ORF106,3
+Crohn's Disease,C1ORF81,1
 Crohn's Disease,C2,1
-Crohn's Disease,C2orf65,1
+Crohn's Disease,C2ORF65,1
 Crohn's Disease,C4A,1
 Crohn's Disease,C5,1
-Crohn's Disease,C5orf56,5
-Crohn's Disease,C6orf10,1
-Crohn's Disease,C6orf106,1
-Crohn's Disease,C6orf203,1
-Crohn's Disease,C6orf204,1
-Crohn's Disease,C8orf85,1
+Crohn's Disease,C5ORF56,5
+Crohn's Disease,C6ORF10,1
+Crohn's Disease,C6ORF106,1
+Crohn's Disease,C6ORF203,1
+Crohn's Disease,C6ORF204,1
+Crohn's Disease,C8ORF85,1
 Crohn's Disease,CACNA2D1,1
 Crohn's Disease,CADM1,1
 Crohn's Disease,CALCOCO2,1
@@ -2773,7 +2749,6 @@ Crohn's Disease,IDH1,1
 Crohn's Disease,IDO1,2
 Crohn's Disease,IDO2,1
 Crohn's Disease,IFNA1,1
-Crohn's Disease,Ifng,1
 Crohn's Disease,IFNG,11
 Crohn's Disease,IFNGR1,1
 Crohn's Disease,IFNGR2,3
@@ -2781,7 +2756,6 @@ Crohn's Disease,IGHG1,1
 Crohn's Disease,IHH,1
 Crohn's Disease,IKZF1,2
 Crohn's Disease,IKZF3,2
-Crohn's Disease,Il10,1
 Crohn's Disease,IL10,45
 Crohn's Disease,IL10RA,4
 Crohn's Disease,IL10RB,3
@@ -2893,8 +2867,7 @@ Crohn's Disease,LRBA,1
 Crohn's Disease,LRP1,1
 Crohn's Disease,LRRC3C,1
 Crohn's Disease,LRRK1,1
-Crohn's Disease,LRRK2,8
-Crohn's Disease,Lrrk2,1
+Crohn's Disease,LRRK2,1
 Crohn's Disease,LSAMP,1
 Crohn's Disease,LSP1,1
 Crohn's Disease,LTA,8
@@ -2926,7 +2899,6 @@ Crohn's Disease,MDM2,1
 Crohn's Disease,MED24,1
 Crohn's Disease,MEFV,12
 Crohn's Disease,MGAT3,2
-Crohn's Disease,MICA,1
 Crohn's Disease,MICA,3
 Crohn's Disease,MICAL1,1
 Crohn's Disease,MICB,2
@@ -3002,7 +2974,6 @@ Crohn's Disease,NLRP7,2
 Crohn's Disease,NLRP8,1
 Crohn's Disease,NLRP9,1
 Crohn's Disease,NOD1,20
-Crohn's Disease,Nod2,1
 Crohn's Disease,NOD2,433
 Crohn's Disease,NOS2,1
 Crohn's Disease,NOS2A,2
@@ -3369,24 +3340,24 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",BTLA,2
 "Diabetes Mellitus, Type 1",BTN3A2,1
 "Diabetes Mellitus, Type 1",BTNL2,3
-"Diabetes Mellitus, Type 1",C10orf2,1
-"Diabetes Mellitus, Type 1",C12orf30,3
-"Diabetes Mellitus, Type 1",C14orf181,2
-"Diabetes Mellitus, Type 1",C14orf64,1
+"Diabetes Mellitus, Type 1",C10ORF2,1
+"Diabetes Mellitus, Type 1",C12ORF30,3
+"Diabetes Mellitus, Type 1",C14ORF181,2
+"Diabetes Mellitus, Type 1",C14ORF64,1
 "Diabetes Mellitus, Type 1",C1QTNF6,3
 "Diabetes Mellitus, Type 1",C2,1
-"Diabetes Mellitus, Type 1",C2orf65,1
+"Diabetes Mellitus, Type 1",C2ORF65,1
 "Diabetes Mellitus, Type 1",C4A,1
 "Diabetes Mellitus, Type 1",C4B,1
 "Diabetes Mellitus, Type 1",C4BPA,1
 "Diabetes Mellitus, Type 1",C5,2
-"Diabetes Mellitus, Type 1",C6orf10,2
-"Diabetes Mellitus, Type 1",C6orf203,1
-"Diabetes Mellitus, Type 1",C6orf204,1
-"Diabetes Mellitus, Type 1",C6orf25,1
-"Diabetes Mellitus, Type 1",C6orf27,1
-"Diabetes Mellitus, Type 1",C6orf47,1
-"Diabetes Mellitus, Type 1",C8orf85,1
+"Diabetes Mellitus, Type 1",C6ORF10,2
+"Diabetes Mellitus, Type 1",C6ORF203,1
+"Diabetes Mellitus, Type 1",C6ORF204,1
+"Diabetes Mellitus, Type 1",C6ORF25,1
+"Diabetes Mellitus, Type 1",C6ORF27,1
+"Diabetes Mellitus, Type 1",C6ORF47,1
+"Diabetes Mellitus, Type 1",C8ORF85,1
 "Diabetes Mellitus, Type 1",CACNA1D,1
 "Diabetes Mellitus, Type 1",CALD1,1
 "Diabetes Mellitus, Type 1",CAPSL,2
@@ -3402,7 +3373,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",CCL3,1
 "Diabetes Mellitus, Type 1",CCL4,1
 "Diabetes Mellitus, Type 1",CCNY,1
-"Diabetes Mellitus, Type 1",CCR2,1
 "Diabetes Mellitus, Type 1",CCR2,1
 "Diabetes Mellitus, Type 1",CCR3,3
 "Diabetes Mellitus, Type 1",CCR5,10
@@ -3496,7 +3466,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",DLL1,1
 "Diabetes Mellitus, Type 1",DMPK,1
 "Diabetes Mellitus, Type 1",DNASE1L1,1
-"Diabetes Mellitus, Type 1",Dock8,1
+"Diabetes Mellitus, Type 1",DOCK8,1
 "Diabetes Mellitus, Type 1",DSE,1
 "Diabetes Mellitus, Type 1",DYNC1H1,1
 "Diabetes Mellitus, Type 1",EFR3B,1
@@ -3557,7 +3527,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",GCLC,2
 "Diabetes Mellitus, Type 1",GHR,1
 "Diabetes Mellitus, Type 1",GIMAP4,1
-"Diabetes Mellitus, Type 1",Gimap5,1
 "Diabetes Mellitus, Type 1",GIMAP5,1
 "Diabetes Mellitus, Type 1",GJA1,1
 "Diabetes Mellitus, Type 1",GJA4,1
@@ -3624,7 +3593,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",IDDM3,1
 "Diabetes Mellitus, Type 1",IDDM4,1
 "Diabetes Mellitus, Type 1",IDDM5,1
-"Diabetes Mellitus, Type 1",Iddm8,1
 "Diabetes Mellitus, Type 1",IDDM8,1
 "Diabetes Mellitus, Type 1",IDE,6
 "Diabetes Mellitus, Type 1",IFIH1,30
@@ -3639,7 +3607,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",IKZF1,2
 "Diabetes Mellitus, Type 1",IKZF3,1
 "Diabetes Mellitus, Type 1",IKZF4,3
-"Diabetes Mellitus, Type 1",Il10,1
 "Diabetes Mellitus, Type 1",IL10,19
 "Diabetes Mellitus, Type 1",IL12A,4
 "Diabetes Mellitus, Type 1",IL12B,9
@@ -3708,7 +3675,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",KIR2DL5B,2
 "Diabetes Mellitus, Type 1",KIR2DP1,1
 "Diabetes Mellitus, Type 1",KIR2DS1,9
-"Diabetes Mellitus, Type 1",KIR2DS2,4
 "Diabetes Mellitus, Type 1",KIR2DS2,1
 "Diabetes Mellitus, Type 1",KIR2DS3,6
 "Diabetes Mellitus, Type 1",KIR2DS4,8
@@ -3760,7 +3726,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",MEFV,1
 "Diabetes Mellitus, Type 1",MGAT1,1
 "Diabetes Mellitus, Type 1",MIA3,1
-"Diabetes Mellitus, Type 1",MICA,2
 "Diabetes Mellitus, Type 1",MICA,23
 "Diabetes Mellitus, Type 1",MICAL1,1
 "Diabetes Mellitus, Type 1",MICB,1
@@ -4081,7 +4046,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",VEGFC,1
 "Diabetes Mellitus, Type 1",VIP,1
 "Diabetes Mellitus, Type 1",VTCN1,2
-"Diabetes Mellitus, Type 1",Vwa2-ps1,1
+"Diabetes Mellitus, Type 1",VWA2-PS1,1
 "Diabetes Mellitus, Type 1",WASF1,1
 "Diabetes Mellitus, Type 1",WDHD1,1
 "Diabetes Mellitus, Type 1",WDR72,1
@@ -4097,7 +4062,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 1",ZMIZ1,2
 "Diabetes Mellitus, Type 1",ZNF300,1
 "Diabetes Mellitus, Type 1",ZNF410,1
-"Diabetes Mellitus, Type 2",A1cf,1
+"Diabetes Mellitus, Type 2",A1CF,1
 "Diabetes Mellitus, Type 2",A2M,1
 "Diabetes Mellitus, Type 2",AAA1,1
 "Diabetes Mellitus, Type 2",AAGAB,1
@@ -4248,12 +4213,10 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",AKR1B10,3
 "Diabetes Mellitus, Type 2",AKR1C1,1
 "Diabetes Mellitus, Type 2",AKR1C2,1
-"Diabetes Mellitus, Type 2",Akt1,1
 "Diabetes Mellitus, Type 2",AKT1,9
 "Diabetes Mellitus, Type 2",AKT2,6
 "Diabetes Mellitus, Type 2",AKT3,1
 "Diabetes Mellitus, Type 2",ALAS1,2
-"Diabetes Mellitus, Type 2",Alb,1
 "Diabetes Mellitus, Type 2",ALB,5
 "Diabetes Mellitus, Type 2",ALCAM,1
 "Diabetes Mellitus, Type 2",ALDH1B1,1
@@ -4507,80 +4470,79 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",BUD13,1
 "Diabetes Mellitus, Type 2",BVES,1
 "Diabetes Mellitus, Type 2",BZW2,1
-"Diabetes Mellitus, Type 2",C10orf107,1
-"Diabetes Mellitus, Type 2",C10orf112,2
-"Diabetes Mellitus, Type 2",C10orf140,1
-"Diabetes Mellitus, Type 2",C10orf55,1
-"Diabetes Mellitus, Type 2",C10orf59,1
-"Diabetes Mellitus, Type 2",C10orf79,1
-"Diabetes Mellitus, Type 2",C11orf10,1
-"Diabetes Mellitus, Type 2",C11orf17,1
-"Diabetes Mellitus, Type 2",C11orf65,2
-"Diabetes Mellitus, Type 2",C11orf9,2
-"Diabetes Mellitus, Type 2",C12orf30,2
-"Diabetes Mellitus, Type 2",C12orf51,3
-"Diabetes Mellitus, Type 2",C14orf21,1
-"Diabetes Mellitus, Type 2",C15orf41,1
-"Diabetes Mellitus, Type 2",C15orf62,1
-"Diabetes Mellitus, Type 2",C16orf62,1
-"Diabetes Mellitus, Type 2",C16orf70,1
-"Diabetes Mellitus, Type 2",C17orf50,1
-"Diabetes Mellitus, Type 2",C17orf78,1
-"Diabetes Mellitus, Type 2",C17orf81,1
-"Diabetes Mellitus, Type 2",C18orf45,1
-"Diabetes Mellitus, Type 2",C18orf56,1
-"Diabetes Mellitus, Type 2",C19orf25,1
-"Diabetes Mellitus, Type 2",C19orf29,1
-"Diabetes Mellitus, Type 2",C19orf80,2
-"Diabetes Mellitus, Type 2",C1orf110,1
-"Diabetes Mellitus, Type 2",C1orf125,1
-"Diabetes Mellitus, Type 2",C1orf167,2
+"Diabetes Mellitus, Type 2",C10ORF107,1
+"Diabetes Mellitus, Type 2",C10ORF112,2
+"Diabetes Mellitus, Type 2",C10ORF140,1
+"Diabetes Mellitus, Type 2",C10ORF55,1
+"Diabetes Mellitus, Type 2",C10ORF59,1
+"Diabetes Mellitus, Type 2",C10ORF79,1
+"Diabetes Mellitus, Type 2",C11ORF10,1
+"Diabetes Mellitus, Type 2",C11ORF17,1
+"Diabetes Mellitus, Type 2",C11ORF65,2
+"Diabetes Mellitus, Type 2",C11ORF9,2
+"Diabetes Mellitus, Type 2",C12ORF30,2
+"Diabetes Mellitus, Type 2",C12ORF51,3
+"Diabetes Mellitus, Type 2",C14ORF21,1
+"Diabetes Mellitus, Type 2",C15ORF41,1
+"Diabetes Mellitus, Type 2",C15ORF62,1
+"Diabetes Mellitus, Type 2",C16ORF62,1
+"Diabetes Mellitus, Type 2",C16ORF70,1
+"Diabetes Mellitus, Type 2",C17ORF50,1
+"Diabetes Mellitus, Type 2",C17ORF78,1
+"Diabetes Mellitus, Type 2",C17ORF81,1
+"Diabetes Mellitus, Type 2",C18ORF45,1
+"Diabetes Mellitus, Type 2",C18ORF56,1
+"Diabetes Mellitus, Type 2",C19ORF25,1
+"Diabetes Mellitus, Type 2",C19ORF29,1
+"Diabetes Mellitus, Type 2",C19ORF80,2
+"Diabetes Mellitus, Type 2",C1ORF110,1
+"Diabetes Mellitus, Type 2",C1ORF125,1
+"Diabetes Mellitus, Type 2",C1ORF167,2
 "Diabetes Mellitus, Type 2",C1QA,2
 "Diabetes Mellitus, Type 2",C1QBP,1
 "Diabetes Mellitus, Type 2",C1QC,1
 "Diabetes Mellitus, Type 2",C1QTNF5,1
 "Diabetes Mellitus, Type 2",C1QTNF6,1
 "Diabetes Mellitus, Type 2",C2,2
-"Diabetes Mellitus, Type 2",C20orf27,1
-"Diabetes Mellitus, Type 2",C21orf34,1
+"Diabetes Mellitus, Type 2",C20ORF27,1
+"Diabetes Mellitus, Type 2",C21ORF34,1
 "Diabetes Mellitus, Type 2",C2CD4A,7
 "Diabetes Mellitus, Type 2",C2CD4B,14
-"Diabetes Mellitus, Type 2",C2orf63,1
-"Diabetes Mellitus, Type 2",C2orf65,1
-"Diabetes Mellitus, Type 2",C2orf86,1
+"Diabetes Mellitus, Type 2",C2ORF63,1
+"Diabetes Mellitus, Type 2",C2ORF65,1
+"Diabetes Mellitus, Type 2",C2ORF86,1
 "Diabetes Mellitus, Type 2",C3,1
 "Diabetes Mellitus, Type 2",C4A,1
 "Diabetes Mellitus, Type 2",C4B,1
 "Diabetes Mellitus, Type 2",C4BPA,1
-"Diabetes Mellitus, Type 2",C4orf32,2
+"Diabetes Mellitus, Type 2",C4ORF32,2
 "Diabetes Mellitus, Type 2",C5,4
 "Diabetes Mellitus, Type 2",C5AR1,1
-"Diabetes Mellitus, Type 2",C5orf23,1
-"Diabetes Mellitus, Type 2",C5orf41,2
+"Diabetes Mellitus, Type 2",C5ORF23,1
+"Diabetes Mellitus, Type 2",C5ORF41,2
 "Diabetes Mellitus, Type 2",C6,2
-"Diabetes Mellitus, Type 2",C6orf1,1
-"Diabetes Mellitus, Type 2",C6orf10,2
-"Diabetes Mellitus, Type 2",C6orf105,1
-"Diabetes Mellitus, Type 2",C6orf106,1
-"Diabetes Mellitus, Type 2",C6orf138,1
-"Diabetes Mellitus, Type 2",C6orf170,1
-"Diabetes Mellitus, Type 2",C6orf173,1
-"Diabetes Mellitus, Type 2",C6orf217,1
-"Diabetes Mellitus, Type 2",C6orf217,1
-"Diabetes Mellitus, Type 2",C6orf25,1
-"Diabetes Mellitus, Type 2",C6orf47,1
-"Diabetes Mellitus, Type 2",C6orf48,1
+"Diabetes Mellitus, Type 2",C6ORF1,1
+"Diabetes Mellitus, Type 2",C6ORF10,2
+"Diabetes Mellitus, Type 2",C6ORF105,1
+"Diabetes Mellitus, Type 2",C6ORF106,1
+"Diabetes Mellitus, Type 2",C6ORF138,1
+"Diabetes Mellitus, Type 2",C6ORF170,1
+"Diabetes Mellitus, Type 2",C6ORF173,1
+"Diabetes Mellitus, Type 2",C6ORF217,1
+"Diabetes Mellitus, Type 2",C6ORF25,1
+"Diabetes Mellitus, Type 2",C6ORF47,1
+"Diabetes Mellitus, Type 2",C6ORF48,1
 "Diabetes Mellitus, Type 2",C7,1
-"Diabetes Mellitus, Type 2",C7orf10,1
+"Diabetes Mellitus, Type 2",C7ORF10,1
 "Diabetes Mellitus, Type 2",C8A,1
-"Diabetes Mellitus, Type 2",C8orf85,1
+"Diabetes Mellitus, Type 2",C8ORF85,1
 "Diabetes Mellitus, Type 2",C9,1
-"Diabetes Mellitus, Type 2",C9orf171,1
+"Diabetes Mellitus, Type 2",C9ORF171,1
 "Diabetes Mellitus, Type 2",CA9,1
 "Diabetes Mellitus, Type 2",CABIN1,1
 "Diabetes Mellitus, Type 2",CABLES1,1
 "Diabetes Mellitus, Type 2",CACNA1A,1
-"Diabetes Mellitus, Type 2",Cacna1b,1
+"Diabetes Mellitus, Type 2",CACNA1B,1
 "Diabetes Mellitus, Type 2",CACNA1C,2
 "Diabetes Mellitus, Type 2",CACNA1D,2
 "Diabetes Mellitus, Type 2",CACNA1E,3
@@ -4606,7 +4568,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",CAMK1G,1
 "Diabetes Mellitus, Type 2",CAMK2G,1
 "Diabetes Mellitus, Type 2",CAMTA1,4
-"Diabetes Mellitus, Type 2",Canx,1
+"Diabetes Mellitus, Type 2",CANX,1
 "Diabetes Mellitus, Type 2",CAP1,1
 "Diabetes Mellitus, Type 2",CAPN10,76
 "Diabetes Mellitus, Type 2",CAPN2,1
@@ -4664,7 +4626,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",CCND2,5
 "Diabetes Mellitus, Type 2",CCNL1,4
 "Diabetes Mellitus, Type 2",CCR1,1
-"Diabetes Mellitus, Type 2",CCR2,3
 "Diabetes Mellitus, Type 2",CCR2,1
 "Diabetes Mellitus, Type 2",CCR4,1
 "Diabetes Mellitus, Type 2",CCR5,14
@@ -4691,7 +4652,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",CD79A,1
 "Diabetes Mellitus, Type 2",CD79B,1
 "Diabetes Mellitus, Type 2",CD86,1
-"Diabetes Mellitus, Type 2",Cd93,1
+"Diabetes Mellitus, Type 2",CD93,1
 "Diabetes Mellitus, Type 2",CD97,1
 "Diabetes Mellitus, Type 2",CDC123,42
 "Diabetes Mellitus, Type 2",CDC2L2,1
@@ -4860,7 +4821,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",COX7A1,2
 "Diabetes Mellitus, Type 2",COX7B2,1
 "Diabetes Mellitus, Type 2",COX8A,14
-"Diabetes Mellitus, Type 2",Cpa6,1
 "Diabetes Mellitus, Type 2",CPA6,1
 "Diabetes Mellitus, Type 2",CPAMD8,1
 "Diabetes Mellitus, Type 2",CPB2,3
@@ -4929,14 +4889,13 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",CTRB2,1
 "Diabetes Mellitus, Type 2",CTRL,1
 "Diabetes Mellitus, Type 2",CTSB,2
-"Diabetes Mellitus, Type 2",Ctsc,1
+"Diabetes Mellitus, Type 2",CTSC,1
 "Diabetes Mellitus, Type 2",CTSD,1
 "Diabetes Mellitus, Type 2",CTSF,1
 "Diabetes Mellitus, Type 2",CTSG,1
 "Diabetes Mellitus, Type 2",CTSH,2
 "Diabetes Mellitus, Type 2",CTSK,1
 "Diabetes Mellitus, Type 2",CTSS,1
-"Diabetes Mellitus, Type 2",Cubn,1
 "Diabetes Mellitus, Type 2",CUBN,2
 "Diabetes Mellitus, Type 2",CUX2,2
 "Diabetes Mellitus, Type 2",CX3CL1,1
@@ -4983,7 +4942,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",CYP7B1,2
 "Diabetes Mellitus, Type 2",CYSLTR1,1
 "Diabetes Mellitus, Type 2",CYSLTR2,1
-"Diabetes Mellitus, Type 2",CYTB,2
 "Diabetes Mellitus, Type 2",CYTB,1
 "Diabetes Mellitus, Type 2",DAB1,2
 "Diabetes Mellitus, Type 2",DACH1,2
@@ -5024,7 +4982,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",DIANPH,3
 "Diabetes Mellitus, Type 2",DIO2,11
 "Diabetes Mellitus, Type 2",DIP2C,1
-"Diabetes Mellitus, Type 2",DKFZp686O1327,1
+"Diabetes Mellitus, Type 2",DKFZP686O1327,1
 "Diabetes Mellitus, Type 2",DLC1,3
 "Diabetes Mellitus, Type 2",DLD,1
 "Diabetes Mellitus, Type 2",DLEU7,1
@@ -5099,7 +5057,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",EGF,2
 "Diabetes Mellitus, Type 2",EGFL7,1
 "Diabetes Mellitus, Type 2",EGFR,9
-"Diabetes Mellitus, Type 2",Egr1,1
+"Diabetes Mellitus, Type 2",EGR1,1
 "Diabetes Mellitus, Type 2",EHMT1,1
 "Diabetes Mellitus, Type 2",EIF2A,1
 "Diabetes Mellitus, Type 2",EIF2AK3,4
@@ -5272,7 +5230,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",FMO2,1
 "Diabetes Mellitus, Type 2",FMO3,1
 "Diabetes Mellitus, Type 2",FN1,1
-"Diabetes Mellitus, Type 2",Fn1,1
 "Diabetes Mellitus, Type 2",FN3K,7
 "Diabetes Mellitus, Type 2",FN3KRP,1
 "Diabetes Mellitus, Type 2",FNBP1L,1
@@ -5431,7 +5388,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",GPR109B,1
 "Diabetes Mellitus, Type 2",GPR116,1
 "Diabetes Mellitus, Type 2",GPR126,1
-"Diabetes Mellitus, Type 2",Gpr158,1
+"Diabetes Mellitus, Type 2",GPR158,1
 "Diabetes Mellitus, Type 2",GPR44,1
 "Diabetes Mellitus, Type 2",GPR45,1
 "Diabetes Mellitus, Type 2",GPR55,1
@@ -5452,7 +5409,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",GRB10,4
 "Diabetes Mellitus, Type 2",GRB14,11
 "Diabetes Mellitus, Type 2",GRB2,1
-"Diabetes Mellitus, Type 2",Grb2,1
 "Diabetes Mellitus, Type 2",GREM1,1
 "Diabetes Mellitus, Type 2",GRIA3,1
 "Diabetes Mellitus, Type 2",GRIN3A,1
@@ -5583,7 +5539,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",HRG,1
 "Diabetes Mellitus, Type 2",HRH1,1
 "Diabetes Mellitus, Type 2",HRH2,1
-"Diabetes Mellitus, Type 2",Hs6st1,1
+"Diabetes Mellitus, Type 2",HS6ST1,1
 "Diabetes Mellitus, Type 2",HS6ST3,1
 "Diabetes Mellitus, Type 2",HSD11B1,13
 "Diabetes Mellitus, Type 2",HSD11B2,1
@@ -5778,7 +5734,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",IVL,1
 "Diabetes Mellitus, Type 2",JAG1,1
 "Diabetes Mellitus, Type 2",JAK1,2
-"Diabetes Mellitus, Type 2",Jak2,1
 "Diabetes Mellitus, Type 2",JAK2,1
 "Diabetes Mellitus, Type 2",JAK3,1
 "Diabetes Mellitus, Type 2",JAM3,1
@@ -5806,7 +5761,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",KCNIP1,3
 "Diabetes Mellitus, Type 2",KCNJ1,3
 "Diabetes Mellitus, Type 2",KCNJ10,1
-"Diabetes Mellitus, Type 2",Kcnj11,1
 "Diabetes Mellitus, Type 2",KCNJ11,162
 "Diabetes Mellitus, Type 2",KCNJ15,2
 "Diabetes Mellitus, Type 2",KCNJ2,1
@@ -5819,8 +5773,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",KCNMB1,1
 "Diabetes Mellitus, Type 2",KCNN2,1
 "Diabetes Mellitus, Type 2",KCNN3,1
-"Diabetes Mellitus, Type 2",KCNQ1,131
-"Diabetes Mellitus, Type 2",Kcnq1,1
+"Diabetes Mellitus, Type 2",KCNQ1,1
 "Diabetes Mellitus, Type 2",KCNQ3,1
 "Diabetes Mellitus, Type 2",KCNQ5,1
 "Diabetes Mellitus, Type 2",KCTD12,1
@@ -6188,8 +6141,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",LPXN,1
 "Diabetes Mellitus, Type 2",LRGUK,1
 "Diabetes Mellitus, Type 2",LRP1,1
-"Diabetes Mellitus, Type 2",LRP2,2
-"Diabetes Mellitus, Type 2",Lrp2,1
+"Diabetes Mellitus, Type 2",LRP2,1
 "Diabetes Mellitus, Type 2",LRP5,6
 "Diabetes Mellitus, Type 2",LRP6,2
 "Diabetes Mellitus, Type 2",LRP8,1
@@ -6210,7 +6162,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",LTF,1
 "Diabetes Mellitus, Type 2",LUC7L,1
 "Diabetes Mellitus, Type 2",LUM,1
-"Diabetes Mellitus, Type 2",Lvis1,1
+"Diabetes Mellitus, Type 2",LVIS1,1
 "Diabetes Mellitus, Type 2",LY6G5B,1
 "Diabetes Mellitus, Type 2",LY6G6C,1
 "Diabetes Mellitus, Type 2",LY75,1
@@ -6227,7 +6179,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",MAEA,3
 "Diabetes Mellitus, Type 2",MAF,7
 "Diabetes Mellitus, Type 2",MAFA,1
-"Diabetes Mellitus, Type 2",Mageb1,1
+"Diabetes Mellitus, Type 2",MAGEB1,1
 "Diabetes Mellitus, Type 2",MAGEL2,1
 "Diabetes Mellitus, Type 2",MAGI2,2
 "Diabetes Mellitus, Type 2",MALT1,1
@@ -6289,7 +6241,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",MCM8,1
 "Diabetes Mellitus, Type 2",MCTP2,1
 "Diabetes Mellitus, Type 2",MDGA2,1
-"Diabetes Mellitus, Type 2",Mdm4,1
+"Diabetes Mellitus, Type 2",MDM4,1
 "Diabetes Mellitus, Type 2",ME2,1
 "Diabetes Mellitus, Type 2",ME3,1
 "Diabetes Mellitus, Type 2",MECP2,1
@@ -6305,7 +6257,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",MEG3,1
 "Diabetes Mellitus, Type 2",MEIS1,1
 "Diabetes Mellitus, Type 2",MEIS2,1
-"Diabetes Mellitus, Type 2",Meis2,1
 "Diabetes Mellitus, Type 2",MEN1,1
 "Diabetes Mellitus, Type 2",METTL1,1
 "Diabetes Mellitus, Type 2",MFAP1,1
@@ -6477,16 +6428,11 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",NCOA6,1
 "Diabetes Mellitus, Type 2",NCOR1,1
 "Diabetes Mellitus, Type 2",NCR3,3
-"Diabetes Mellitus, Type 2",ND1,11
 "Diabetes Mellitus, Type 2",ND1,2
-"Diabetes Mellitus, Type 2",ND2,1
 "Diabetes Mellitus, Type 2",ND2,4
-"Diabetes Mellitus, Type 2",ND3,4
 "Diabetes Mellitus, Type 2",ND3,2
-"Diabetes Mellitus, Type 2",ND4,2
 "Diabetes Mellitus, Type 2",ND4,1
 "Diabetes Mellitus, Type 2",ND4L,1
-"Diabetes Mellitus, Type 2",ND5,2
 "Diabetes Mellitus, Type 2",ND5,1
 "Diabetes Mellitus, Type 2",ND6,1
 "Diabetes Mellitus, Type 2",NDN,1
@@ -6567,7 +6513,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",NPAS2,1
 "Diabetes Mellitus, Type 2",NPAS3,1
 "Diabetes Mellitus, Type 2",NPAT,1
-"Diabetes Mellitus, Type 2",NPC1,1
 "Diabetes Mellitus, Type 2",NPC1,7
 "Diabetes Mellitus, Type 2",NPC1L1,4
 "Diabetes Mellitus, Type 2",NPC2,1
@@ -6628,7 +6573,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",NUDT6,1
 "Diabetes Mellitus, Type 2",NUP133,1
 "Diabetes Mellitus, Type 2",NXPH1,2
-"Diabetes Mellitus, Type 2",O3far1,1
 "Diabetes Mellitus, Type 2",O3FAR1,1
 "Diabetes Mellitus, Type 2",OAS1,1
 "Diabetes Mellitus, Type 2",OASL,2
@@ -6666,11 +6610,8 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",OSM,1
 "Diabetes Mellitus, Type 2",OST4,1
 "Diabetes Mellitus, Type 2",OTX2,1
-"Diabetes Mellitus, Type 2",P2rx4,1
 "Diabetes Mellitus, Type 2",P2RX4,1
-"Diabetes Mellitus, Type 2",P2rx7,1
 "Diabetes Mellitus, Type 2",P2RX7,1
-"Diabetes Mellitus, Type 2",P2ry1,1
 "Diabetes Mellitus, Type 2",P2RY1,3
 "Diabetes Mellitus, Type 2",P2RY12,1
 "Diabetes Mellitus, Type 2",P2RY13,1
@@ -6764,7 +6705,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",PDZK1,3
 "Diabetes Mellitus, Type 2",PDZK1IP1,1
 "Diabetes Mellitus, Type 2",PDZRN3,1
-"Diabetes Mellitus, Type 2",Pebp1,1
+"Diabetes Mellitus, Type 2",PEBP1,1
 "Diabetes Mellitus, Type 2",PECAM1,1
 "Diabetes Mellitus, Type 2",PEG10,1
 "Diabetes Mellitus, Type 2",PELO,1
@@ -6807,7 +6748,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",PIK3CB,3
 "Diabetes Mellitus, Type 2",PIK3CD,2
 "Diabetes Mellitus, Type 2",PIK3CG,1
-"Diabetes Mellitus, Type 2",Pik3r1,1
 "Diabetes Mellitus, Type 2",PIK3R1,9
 "Diabetes Mellitus, Type 2",PINK1,1
 "Diabetes Mellitus, Type 2",PITPNA,1
@@ -6874,7 +6814,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",PLTP,6
 "Diabetes Mellitus, Type 2",PLXDC2,1
 "Diabetes Mellitus, Type 2",PLXNA2,1
-"Diabetes Mellitus, Type 2",Plxna3,1
+"Diabetes Mellitus, Type 2",PLXNA3,1
 "Diabetes Mellitus, Type 2",PLXNA4,2
 "Diabetes Mellitus, Type 2",PLXND1,1
 "Diabetes Mellitus, Type 2",PMP22,1
@@ -6968,14 +6908,14 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",PROP1,1
 "Diabetes Mellitus, Type 2",PROX1,21
 "Diabetes Mellitus, Type 2",PROZ,1
-"Diabetes Mellitus, Type 2",Prpf31,1
+"Diabetes Mellitus, Type 2",PRPF31,1
 "Diabetes Mellitus, Type 2",PRPF8,1
 "Diabetes Mellitus, Type 2",PRR5-ARHGAP8,1
 "Diabetes Mellitus, Type 2",PRRC2A,2
 "Diabetes Mellitus, Type 2",PRRT4,1
 "Diabetes Mellitus, Type 2",PRSS3,1
 "Diabetes Mellitus, Type 2",PRTN3,1
-"Diabetes Mellitus, Type 2",Psap,1
+"Diabetes Mellitus, Type 2",PSAP,1
 "Diabetes Mellitus, Type 2",PSD3,1
 "Diabetes Mellitus, Type 2",PSEN2,1
 "Diabetes Mellitus, Type 2",PSMA6,5
@@ -6992,7 +6932,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",PTBP1,1
 "Diabetes Mellitus, Type 2",PTCD3,1
 "Diabetes Mellitus, Type 2",PTCH1,2
-"Diabetes Mellitus, Type 2",Pten,1
 "Diabetes Mellitus, Type 2",PTEN,5
 "Diabetes Mellitus, Type 2",PTER,5
 "Diabetes Mellitus, Type 2",PTGDR,2
@@ -7039,7 +6978,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",R3HDML,2
 "Diabetes Mellitus, Type 2",RAB15,1
 "Diabetes Mellitus, Type 2",RAB26,1
-"Diabetes Mellitus, Type 2",Rab38,1
+"Diabetes Mellitus, Type 2",RAB38,1
 "Diabetes Mellitus, Type 2",RAB3D,1
 "Diabetes Mellitus, Type 2",RAB3GAP1,1
 "Diabetes Mellitus, Type 2",RAB5A,1
@@ -7106,7 +7045,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",RGS2,1
 "Diabetes Mellitus, Type 2",RGS3,1
 "Diabetes Mellitus, Type 2",RGS4,1
-"Diabetes Mellitus, Type 2",Rgs7,1
 "Diabetes Mellitus, Type 2",RGS7,2
 "Diabetes Mellitus, Type 2",RHBDF2,1
 "Diabetes Mellitus, Type 2",RHBG,1
@@ -7133,7 +7071,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",RNFT1,1
 "Diabetes Mellitus, Type 2",RNLS,2
 "Diabetes Mellitus, Type 2",RNPEPL1,1
-"Diabetes Mellitus, Type 2",RNR1,1
 "Diabetes Mellitus, Type 2",RNR1,4
 "Diabetes Mellitus, Type 2",RNR2,2
 "Diabetes Mellitus, Type 2",RNU1-1,1
@@ -7358,8 +7295,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",SLC30A10,3
 "Diabetes Mellitus, Type 2",SLC30A4,1
 "Diabetes Mellitus, Type 2",SLC30A7,1
-"Diabetes Mellitus, Type 2",SLC30A8,153
-"Diabetes Mellitus, Type 2",Slc30a8,1
+"Diabetes Mellitus, Type 2",SLC30A8,1
 "Diabetes Mellitus, Type 2",SLC35B3,1
 "Diabetes Mellitus, Type 2",SLC35B4,1
 "Diabetes Mellitus, Type 2",SLC35F3,1
@@ -7493,8 +7429,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",STARD9,1
 "Diabetes Mellitus, Type 2",STAT1,1
 "Diabetes Mellitus, Type 2",STAT2,1
-"Diabetes Mellitus, Type 2",STAT3,2
-"Diabetes Mellitus, Type 2",Stat3,1
+"Diabetes Mellitus, Type 2",STAT3,1
 "Diabetes Mellitus, Type 2",STAT4,2
 "Diabetes Mellitus, Type 2",STAT5B,1
 "Diabetes Mellitus, Type 2",STAT6,1
@@ -7585,7 +7520,6 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",TFR2,1
 "Diabetes Mellitus, Type 2",TFRC,3
 "Diabetes Mellitus, Type 2",TGFA,1
-"Diabetes Mellitus, Type 2",Tgfb1,1
 "Diabetes Mellitus, Type 2",TGFB1,22
 "Diabetes Mellitus, Type 2",TGFB2,1
 "Diabetes Mellitus, Type 2",TGFBI,1
@@ -7690,7 +7624,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",TOMM40,3
 "Diabetes Mellitus, Type 2",TOMM7,2
 "Diabetes Mellitus, Type 2",TOP2B,1
-"Diabetes Mellitus, Type 2",tor,1
+"Diabetes Mellitus, Type 2",TOR,1
 "Diabetes Mellitus, Type 2",TOX,2
 "Diabetes Mellitus, Type 2",TP53,6
 "Diabetes Mellitus, Type 2",TP53INP1,9
@@ -7726,19 +7660,15 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",TRNA,1
 "Diabetes Mellitus, Type 2",TRNC,1
 "Diabetes Mellitus, Type 2",TRNE,2
-"Diabetes Mellitus, Type 2",trnE,2
 "Diabetes Mellitus, Type 2",TRNF,1
 "Diabetes Mellitus, Type 2",TRNG,1
 "Diabetes Mellitus, Type 2",TRNH,1
-"Diabetes Mellitus, Type 2",TRNK,1
-"Diabetes Mellitus, Type 2",trnK,3
+"Diabetes Mellitus, Type 2",TRNK,3
 "Diabetes Mellitus, Type 2",TRNL1,15
 "Diabetes Mellitus, Type 2",TRNM,1
 "Diabetes Mellitus, Type 2",TRNN,1
 "Diabetes Mellitus, Type 2",TRNP,1
-"Diabetes Mellitus, Type 2",trnQ,1
 "Diabetes Mellitus, Type 2",TRNQ,2
-"Diabetes Mellitus, Type 2",trnR,1
 "Diabetes Mellitus, Type 2",TRNR,1
 "Diabetes Mellitus, Type 2",TRNS1,1
 "Diabetes Mellitus, Type 2",TRNS2,3
@@ -7834,7 +7764,7 @@ Crohn's Disease,ZPBP2,2
 "Diabetes Mellitus, Type 2",VAMP4,1
 "Diabetes Mellitus, Type 2",VAMP8,1
 "Diabetes Mellitus, Type 2",VARS,1
-"Diabetes Mellitus, Type 2",Vav1,1
+"Diabetes Mellitus, Type 2",VAV1,1
 "Diabetes Mellitus, Type 2",VAV3,1
 "Diabetes Mellitus, Type 2",VAX2,1
 "Diabetes Mellitus, Type 2",VCAM1,4
@@ -7962,7 +7892,6 @@ Hypertension,ACADSB,1
 Hypertension,ACAT2,1
 Hypertension,ACBD4,1
 Hypertension,ACCN3,2
-Hypertension,Ace,1
 Hypertension,ACE,681
 Hypertension,ACE2,37
 Hypertension,ACOT7,1
@@ -8022,10 +7951,9 @@ Hypertension,AFP,1
 Hypertension,AGER,8
 Hypertension,AGMAT,1
 Hypertension,AGRP,2
-Hypertension,Agt,2
 Hypertension,AGT,400
 Hypertension,AGTR1,283
-Hypertension,Agtr1a,1
+Hypertension,AGTR1A,1
 Hypertension,AGTR2,45
 Hypertension,AGTRAP,2
 Hypertension,AGXT,1
@@ -8171,7 +8099,6 @@ Hypertension,BMP6,1
 Hypertension,BMP7,2
 Hypertension,BMP8A,1
 Hypertension,BMPR1A,1
-Hypertension,Bmpr2,1
 Hypertension,BMPR2,55
 Hypertension,BOLL,1
 Hypertension,BRAP,3
@@ -8187,40 +8114,40 @@ Hypertension,BTN2A1,3
 Hypertension,BTNL2,1
 Hypertension,BTRC,1
 Hypertension,BUD13,1
-Hypertension,C10orf107,7
-Hypertension,C10orf59,1
-Hypertension,C11orf9,1
-Hypertension,C12orf30,1
-Hypertension,C12orf35,1
-Hypertension,C12orf43,1
-Hypertension,C12orf51,1
-Hypertension,C12orf75,1
-Hypertension,C14orf181,1
-Hypertension,C18orf1,1
-Hypertension,C19orf80,1
+Hypertension,C10ORF107,7
+Hypertension,C10ORF59,1
+Hypertension,C11ORF9,1
+Hypertension,C12ORF30,1
+Hypertension,C12ORF35,1
+Hypertension,C12ORF43,1
+Hypertension,C12ORF51,1
+Hypertension,C12ORF75,1
+Hypertension,C14ORF181,1
+Hypertension,C18ORF1,1
+Hypertension,C19ORF80,1
 Hypertension,C1GALT1,1
-Hypertension,C1orf110,1
-Hypertension,C1orf112,1
-Hypertension,C1orf114,1
-Hypertension,C1orf125,1
-Hypertension,C1orf135,1
-Hypertension,C1orf156,1
-Hypertension,C1orf35,1
+Hypertension,C1ORF110,1
+Hypertension,C1ORF112,1
+Hypertension,C1ORF114,1
+Hypertension,C1ORF125,1
+Hypertension,C1ORF135,1
+Hypertension,C1ORF156,1
+Hypertension,C1ORF35,1
 Hypertension,C2,1
-Hypertension,C21orf34,1
-Hypertension,C21orf56,2
+Hypertension,C21ORF34,1
+Hypertension,C21ORF56,2
 Hypertension,C2CD4B,1
-Hypertension,C2orf65,1
-Hypertension,C2orf80,1
+Hypertension,C2ORF65,1
+Hypertension,C2ORF80,1
 Hypertension,C3,2
 Hypertension,C4A,2
 Hypertension,C4BPA,1
 Hypertension,C5,1
-Hypertension,C6orf10,1
-Hypertension,C6orf105,1
-Hypertension,C7orf49,3
-Hypertension,C8orf85,1
-Hypertension,C9orf3,2
+Hypertension,C6ORF10,1
+Hypertension,C6ORF105,1
+Hypertension,C7ORF49,3
+Hypertension,C8ORF85,1
+Hypertension,C9ORF3,2
 Hypertension,CA1,1
 Hypertension,CA2,1
 Hypertension,CA4,1
@@ -8281,14 +8208,11 @@ Hypertension,CCL25,1
 Hypertension,CCL5,5
 Hypertension,CCL8,1
 Hypertension,CCND1,2
-Hypertension,CCR2,8
-Hypertension,Ccr2,1
 Hypertension,CCR2,2
 Hypertension,CCR3,1
 Hypertension,CCR5,12
 Hypertension,CCT2,1
-Hypertension,CD14,10
-Hypertension,Cd14,1
+Hypertension,CD14,1
 Hypertension,CD164L2,1
 Hypertension,CD200,1
 Hypertension,CD226,2
@@ -8347,7 +8271,7 @@ Hypertension,CHN1,1
 Hypertension,CHPT1,1
 Hypertension,CHRNA3,2
 Hypertension,CHRNA4,1
-Hypertension,Chrna7,1
+Hypertension,CHRNA7,1
 Hypertension,CHST13,2
 Hypertension,CHST3,2
 Hypertension,CHUK,2
@@ -8455,8 +8379,7 @@ Hypertension,CXCR4,1
 Hypertension,CYB561,1
 Hypertension,CYB5B,1
 Hypertension,CYBA,51
-Hypertension,CYBB,2
-Hypertension,Cybb,1
+Hypertension,CYBB,1
 Hypertension,CYP11A1,3
 Hypertension,CYP11B1,19
 Hypertension,CYP11B2,190
@@ -8548,7 +8471,6 @@ Hypertension,ECE1,7
 Hypertension,ECE2,1
 Hypertension,ECOP,1
 Hypertension,EDIL3,1
-Hypertension,Edn1,1
 Hypertension,EDN1,61
 Hypertension,EDN2,3
 Hypertension,EDN3,4
@@ -8585,7 +8507,6 @@ Hypertension,EPB41L5,1
 Hypertension,EPHA4,1
 Hypertension,EPHA6,2
 Hypertension,EPHB4,1
-Hypertension,Ephb6,1
 Hypertension,EPHB6,1
 Hypertension,EPHX1,2
 Hypertension,EPHX2,13
@@ -8618,7 +8539,6 @@ Hypertension,EYA2,1
 Hypertension,F10,1
 Hypertension,F11,2
 Hypertension,F11R,1
-Hypertension,F12,1
 Hypertension,F12,6
 Hypertension,F13A1,13
 Hypertension,F2,51
@@ -8659,11 +8579,10 @@ Hypertension,FGA,9
 Hypertension,FGB,34
 Hypertension,FGF1,3
 Hypertension,FGF10,1
-Hypertension,Fgf2,1
+Hypertension,FGF2,1
 Hypertension,FGF21,1
 Hypertension,FGF5,16
 Hypertension,FGF9,1
-Hypertension,Fgfbp1,1
 Hypertension,FGFBP1,1
 Hypertension,FGFR1,1
 Hypertension,FGFR2,2
@@ -8708,7 +8627,6 @@ Hypertension,FUT7,1
 Hypertension,FYN,1
 Hypertension,FZD4,1
 Hypertension,G6PC2,2
-Hypertension,G6pd,1
 Hypertension,G6PD,1
 Hypertension,GAA,2
 Hypertension,GAB2,1
@@ -8742,10 +8660,8 @@ Hypertension,GCM1,1
 Hypertension,GDF15,1
 Hypertension,GDF2,1
 Hypertension,GDNF,1
-Hypertension,Gdnf,1
 Hypertension,GDPD4,1
 Hypertension,GFRA1,1
-Hypertension,Gfra1,1
 Hypertension,GGA3,1
 Hypertension,GGCT,1
 Hypertension,GGH,1
@@ -8808,7 +8724,7 @@ Hypertension,GPX3,2
 Hypertension,GPX4,1
 Hypertension,GRB14,2
 Hypertension,GRB2,1
-Hypertension,Grhl1,1
+Hypertension,GRHL1,1
 Hypertension,GRHPR,1
 Hypertension,GRIA1,1
 Hypertension,GRK4,26
@@ -8880,8 +8796,7 @@ Hypertension,HMGB1,1
 Hypertension,HMGB3P18,1
 Hypertension,HMGCR,4
 Hypertension,HMGCS2,2
-Hypertension,HMOX1,21
-Hypertension,Hmox1,1
+Hypertension,HMOX1,1
 Hypertension,HMOX2,1
 Hypertension,HNF1A,8
 Hypertension,HNF1B,1
@@ -8892,7 +8807,7 @@ Hypertension,HOXA@,1
 Hypertension,HOXC13,1
 Hypertension,HP,9
 Hypertension,HPCAL1,1
-Hypertension,Hprt,1
+Hypertension,HPRT,1
 Hypertension,HPS4,1
 Hypertension,HPSE,2
 Hypertension,HRC,1
@@ -9019,7 +8934,7 @@ Hypertension,ITGA2B,5
 Hypertension,ITGA4,1
 Hypertension,ITGA8,1
 Hypertension,ITGA9,3
-Hypertension,Itgam,1
+Hypertension,ITGAM,1
 Hypertension,ITGAV,1
 Hypertension,ITGB1,1
 Hypertension,ITGB1BP2,1
@@ -9107,11 +9022,10 @@ Hypertension,KLHDC1,1
 Hypertension,KLHL12,1
 Hypertension,KLHL3,2
 Hypertension,KLK1,18
-Hypertension,Klk1b9,1
+Hypertension,KLK1B9,1
 Hypertension,KLK2,1
 Hypertension,KLK4,3
 Hypertension,KLK8,1
-Hypertension,Klkb1,1
 Hypertension,KLKB1,3
 Hypertension,KLRB1,1
 Hypertension,KNG1,5
@@ -9197,14 +9111,14 @@ Hypertension,LSAMP,1
 Hypertension,LSS,1
 Hypertension,LTA,13
 Hypertension,LTA4H,1
-Hypertension,Ltbp1,1
+Hypertension,LTBP1,1
 Hypertension,LTBP2,2
 Hypertension,LTBP4,1
 Hypertension,LTC4S,2
 Hypertension,LTF,1
 Hypertension,LVRN,1
-Hypertension,Ly6c1,1
-Hypertension,Ly6g,1
+Hypertension,LY6C1,1
+Hypertension,LY6G,1
 Hypertension,LY86,1
 Hypertension,LYPLA1,1
 Hypertension,LYPLAL1,3
@@ -9220,13 +9134,12 @@ Hypertension,MAGI1,1
 Hypertension,MALAT1,1
 Hypertension,MAN1B1,1
 Hypertension,MAOA,1
-Hypertension,Map2k4,1
+Hypertension,MAP2K4,1
 Hypertension,MAP2K5,1
 Hypertension,MAP4,1
 Hypertension,MAPK1,1
-Hypertension,Mapk14,1
+Hypertension,MAPK14,1
 Hypertension,MAPK3,1
-Hypertension,Mapk8,1
 Hypertension,MAPK8,1
 Hypertension,MAPKAP1,1
 Hypertension,MAPKAPK2,2
@@ -9381,9 +9294,7 @@ Hypertension,NCOA3,2
 Hypertension,NCOR1,1
 Hypertension,NCOR2,2
 Hypertension,NCR3,2
-Hypertension,ND1,1
 Hypertension,ND1,2
-Hypertension,ND2,3
 Hypertension,ND2,10
 Hypertension,ND4,1
 Hypertension,ND6,1
@@ -9422,7 +9333,6 @@ Hypertension,NOS1,7
 Hypertension,NOS1AP,6
 Hypertension,NOS2,17
 Hypertension,NOS2A,3
-Hypertension,Nos3,1
 Hypertension,NOS3,316
 Hypertension,NOTCH1,1
 Hypertension,NOTCH2,2
@@ -9431,12 +9341,10 @@ Hypertension,NOVA2,1
 Hypertension,NOX1,3
 Hypertension,NOX4,2
 Hypertension,NPAS2,2
-Hypertension,NPC1,2
 Hypertension,NPC1,1
 Hypertension,NPHP1,1
 Hypertension,NPHS1,4
 Hypertension,NPHS2,6
-Hypertension,Nppa,1
 Hypertension,NPPA,42
 Hypertension,NPPA-AS1,1
 Hypertension,NPPB,24
@@ -9455,7 +9363,6 @@ Hypertension,NR1H4,2
 Hypertension,NR1I2,3
 Hypertension,NR2F1,1
 Hypertension,NR2F2,1
-Hypertension,Nr2f2,1
 Hypertension,NR3C1,25
 Hypertension,NR3C2,25
 Hypertension,NR4A3,1
@@ -9622,7 +9529,6 @@ Hypertension,POC1B,1
 Hypertension,POFUT2,1
 Hypertension,POGK,1
 Hypertension,POLG,1
-Hypertension,Polg,1
 Hypertension,POLR1D,1
 Hypertension,POMC,5
 Hypertension,PON1,47
@@ -9632,7 +9538,7 @@ Hypertension,POR,3
 Hypertension,POSTN,1
 Hypertension,POU2F1,1
 Hypertension,POU2F3,1
-Hypertension,Ppap2a,3
+Hypertension,PPAP2A,3
 Hypertension,PPARA,21
 Hypertension,PPARD,8
 Hypertension,PPARG,72
@@ -9751,9 +9657,8 @@ Hypertension,REG3A,3
 Hypertension,REL,1
 Hypertension,RELA,1
 Hypertension,REN,87
-Hypertension,Ren1,1
+Hypertension,REN1,1
 Hypertension,RENBP,4
-Hypertension,Ret,1
 Hypertension,RET,12
 Hypertension,RETN,11
 Hypertension,RFC1,1
@@ -10005,7 +9910,7 @@ Hypertension,SOX6,2
 Hypertension,SP4,1
 Hypertension,SPACA1,1
 Hypertension,SPATA13,1
-Hypertension,Spata5,1
+Hypertension,SPATA5,1
 Hypertension,SPATS2L,1
 Hypertension,SPESP1,1
 Hypertension,SPG7,1
@@ -10075,7 +9980,7 @@ Hypertension,TBX5,5
 Hypertension,TBXA2R,3
 Hypertension,TBXAS1,1
 Hypertension,TCAP,1
-Hypertension,Tceanc,1
+Hypertension,TCEANC,1
 Hypertension,TCERG1L,1
 Hypertension,TCF21,1
 Hypertension,TCF25,1
@@ -10184,12 +10089,11 @@ Hypertension,TRIB1,2
 Hypertension,TRIB3,2
 Hypertension,TRIM47,1
 Hypertension,TRIM65,2
-Hypertension,trnI,2
 Hypertension,TRNI,1
-Hypertension,trnK,1
+Hypertension,TRNK,1
 Hypertension,TRNL1,2
-Hypertension,trnM,2
-Hypertension,trnQ,1
+Hypertension,TRNM,2
+Hypertension,TRNQ,1
 Hypertension,TRNT,1
 Hypertension,TRPC1,1
 Hypertension,TRPC3,1
@@ -10264,8 +10168,7 @@ Hypertension,VCAN,2
 Hypertension,VCL,2
 Hypertension,VDR,36
 Hypertension,VEGF,4
-Hypertension,VEGFA,64
-Hypertension,Vegfa,1
+Hypertension,VEGFA,1
 Hypertension,VEGFC,2
 Hypertension,VHL,9
 Hypertension,VIP,3
@@ -10444,34 +10347,34 @@ Rheumatoid Arthritis,BIRC2,1
 Rheumatoid Arthritis,BIRC5,1
 Rheumatoid Arthritis,BLK,15
 Rheumatoid Arthritis,BOLL,1
-Rheumatoid Arthritis,Braf,1
+Rheumatoid Arthritis,BRAF,1
 Rheumatoid Arthritis,BRCA2,1
 Rheumatoid Arthritis,BSN,1
 Rheumatoid Arthritis,BTLA,2
 Rheumatoid Arthritis,BTNL2,8
-Rheumatoid Arthritis,C12orf30,2
-Rheumatoid Arthritis,C12orf65,1
-Rheumatoid Arthritis,C17orf76,1
-Rheumatoid Arthritis,C17orf76-AS1,1
-Rheumatoid Arthritis,C1orf63,1
+Rheumatoid Arthritis,C12ORF30,2
+Rheumatoid Arthritis,C12ORF65,1
+Rheumatoid Arthritis,C17ORF76,1
+Rheumatoid Arthritis,C17ORF76-AS1,1
+Rheumatoid Arthritis,C1ORF63,1
 Rheumatoid Arthritis,C1QA,1
 Rheumatoid Arthritis,C1QB,1
 Rheumatoid Arthritis,C1QBP,1
 Rheumatoid Arthritis,C1QC,1
-Rheumatoid Arthritis,C2orf65,1
+Rheumatoid Arthritis,C2ORF65,1
 Rheumatoid Arthritis,C4A,1
 Rheumatoid Arthritis,C4B,1
 Rheumatoid Arthritis,C5,34
-Rheumatoid Arthritis,C5orf13,1
-Rheumatoid Arthritis,C5orf30,5
-Rheumatoid Arthritis,C6orf10,5
-Rheumatoid Arthritis,C6orf15,1
-Rheumatoid Arthritis,C6orf25,1
-Rheumatoid Arthritis,C6orf26,1
-Rheumatoid Arthritis,C6orf27,1
-Rheumatoid Arthritis,C6orf47,1
-Rheumatoid Arthritis,C8orf85,1
-Rheumatoid Arthritis,C9orf72,1
+Rheumatoid Arthritis,C5ORF13,1
+Rheumatoid Arthritis,C5ORF30,5
+Rheumatoid Arthritis,C6ORF10,5
+Rheumatoid Arthritis,C6ORF15,1
+Rheumatoid Arthritis,C6ORF25,1
+Rheumatoid Arthritis,C6ORF26,1
+Rheumatoid Arthritis,C6ORF27,1
+Rheumatoid Arthritis,C6ORF47,1
+Rheumatoid Arthritis,C8ORF85,1
+Rheumatoid Arthritis,C9ORF72,1
 Rheumatoid Arthritis,CA1,1
 Rheumatoid Arthritis,CALCRL,1
 Rheumatoid Arthritis,CARD15,6
@@ -10508,7 +10411,6 @@ Rheumatoid Arthritis,CCND3,1
 Rheumatoid Arthritis,CCNDBP1,1
 Rheumatoid Arthritis,CCNT1,1
 Rheumatoid Arthritis,CCNT2,1
-Rheumatoid Arthritis,CCR2,1
 Rheumatoid Arthritis,CCR2,2
 Rheumatoid Arthritis,CCR5,16
 Rheumatoid Arthritis,CCR6,12
@@ -10519,7 +10421,6 @@ Rheumatoid Arthritis,CD177,1
 Rheumatoid Arthritis,CD19,3
 Rheumatoid Arthritis,CD2,4
 Rheumatoid Arthritis,CD209,2
-Rheumatoid Arthritis,Cd226,1
 Rheumatoid Arthritis,CD226,19
 Rheumatoid Arthritis,CD24,1
 Rheumatoid Arthritis,CD244,3
@@ -10899,7 +10800,6 @@ Rheumatoid Arthritis,IL17RC,1
 Rheumatoid Arthritis,IL18,24
 Rheumatoid Arthritis,IL19,1
 Rheumatoid Arthritis,IL1A,24
-Rheumatoid Arthritis,Il1b,1
 Rheumatoid Arthritis,IL1B,50
 Rheumatoid Arthritis,IL1F10,2
 Rheumatoid Arthritis,IL1F5,1
@@ -10950,7 +10850,6 @@ Rheumatoid Arthritis,IRAK3,3
 Rheumatoid Arthritis,IRAK4,2
 Rheumatoid Arthritis,IRF1,2
 Rheumatoid Arthritis,IRF4,1
-Rheumatoid Arthritis,Irf5,1
 Rheumatoid Arthritis,IRF5,32
 Rheumatoid Arthritis,IRF6,2
 Rheumatoid Arthritis,IRGM,1
@@ -10990,7 +10889,6 @@ Rheumatoid Arthritis,KIR2DL4,4
 Rheumatoid Arthritis,KIR2DL5A,2
 Rheumatoid Arthritis,KIR2DP1,2
 Rheumatoid Arthritis,KIR2DS1,4
-Rheumatoid Arthritis,KIR2DS2,3
 Rheumatoid Arthritis,KIR2DS2,2
 Rheumatoid Arthritis,KIR2DS3,3
 Rheumatoid Arthritis,KIR2DS4,2
@@ -11083,7 +10981,6 @@ Rheumatoid Arthritis,METTL21B,1
 Rheumatoid Arthritis,MGAT3,1
 Rheumatoid Arthritis,MGC23270,1
 Rheumatoid Arthritis,MIA3,1
-Rheumatoid Arthritis,MICA,6
 Rheumatoid Arthritis,MICA,10
 Rheumatoid Arthritis,MICB,3
 Rheumatoid Arthritis,MIF,12
@@ -11440,16 +11337,12 @@ Rheumatoid Arthritis,TIMP1,2
 Rheumatoid Arthritis,TIRAP,1
 Rheumatoid Arthritis,TLR1,2
 Rheumatoid Arthritis,TLR10,2
-Rheumatoid Arthritis,Tlr2,1
 Rheumatoid Arthritis,TLR2,12
-Rheumatoid Arthritis,Tlr3,1
 Rheumatoid Arthritis,TLR3,4
-Rheumatoid Arthritis,Tlr4,1
 Rheumatoid Arthritis,TLR4,25
 Rheumatoid Arthritis,TLR5,3
 Rheumatoid Arthritis,TLR6,1
 Rheumatoid Arthritis,TLR7,1
-Rheumatoid Arthritis,Tlr7,1
 Rheumatoid Arthritis,TLR8,3
 Rheumatoid Arthritis,TLR9,5
 Rheumatoid Arthritis,TMEM187,1
@@ -11505,7 +11398,7 @@ Rheumatoid Arthritis,TRHDE,1
 Rheumatoid Arthritis,TRIM21,1
 Rheumatoid Arthritis,TRIM4,1
 Rheumatoid Arthritis,TRIM5,1
-Rheumatoid Arthritis,Trim69,1
+Rheumatoid Arthritis,TRIM69,1
 Rheumatoid Arthritis,TROVE2,1
 Rheumatoid Arthritis,TSC22D1,1
 Rheumatoid Arthritis,TSHR,1

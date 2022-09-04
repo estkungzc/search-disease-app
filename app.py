@@ -331,6 +331,34 @@ snp_within_genes = gene_ncbi_info_repr[
     gene_ncbi_info_repr["Is SNP's near or within a gene"] == "Y"
 ]
 
+# Special case: SNPs can be found inside and outside the genes
+snp_groups = gene_ncbi_info_repr.groupby(["Probe Set ID"])
+
+snp_in_out_genes = []  # list of probe set id
+for group_name, df_group in snp_groups:
+    gene_with_info_in_out = {}
+    for row_index, row in df_group.iterrows():
+        print(row_index)
+        if row["Official Symbol"] not in gene_with_info_in_out:
+            gene_with_info_in_out[row["Official Symbol"]] = {
+                row["Is SNP's near or within a gene"]
+            }
+        else:
+            gene_with_info_in_out[row["Official Symbol"]].add(
+                row["Is SNP's near or within a gene"]
+            )
+    for gene, info in gene_with_info_in_out.items():
+        if len(info) > 1:
+            snp_in_out_genes.append(group_name)
+
+gene_ncbi_info_snp_in_out = gene_ncbi_info_repr[
+    gene_ncbi_info_repr["Probe Set ID"].isin(snp_in_out_genes)
+]
+
+gene_ncbi_info_repr = gene_ncbi_info_repr[
+    ~gene_ncbi_info_repr["Probe Set ID"].isin(snp_in_out_genes)
+]
+
 # columns for represent report HuGE, KEGG
 COLUMNS_LIST_VIEW = [
     "Probe Set ID",
@@ -362,7 +390,7 @@ for index, row in snp_within_genes.iterrows():
 
     if row["Also known as"]:
         for gene_name in row["Also known as"]:
-            result = {"gene_id": row["Gene Id"], "gene_symbol": gene_name}
+            result = {"gene_id": row["Gene Id"], "gene_symbol": gene_name.upper()}
             genes_info_lookup = genes_info_lookup.append(result, ignore_index=True)
 
 genes_info_lookup = genes_info_lookup.drop_duplicates(keep=False)
@@ -509,6 +537,15 @@ AgGrid(
     gridOptions=get_base_grid_options(gene_ncbi_info_repr, "Probe Set ID"),
     enable_enterprise_modules=True,
     key="gene_ncbi_info_repr",
+)
+
+st.subheader("Special case: SNPs can be found inside and outside the genes")
+AgGrid(
+    gene_ncbi_info_snp_in_out,
+    reload_data=True,
+    gridOptions=get_base_grid_options(gene_ncbi_info_snp_in_out, "Probe Set ID"),
+    enable_enterprise_modules=True,
+    key="gene_ncbi_info_snp_in_out",
 )
 
 st.subheader("Summary report of selected genes and diseases 📊")

@@ -81,6 +81,7 @@ with st.expander("ℹ️ - About this app", expanded=True):
 -   To determine whether SNPs contain genes that appear in research on the disease of interest.
 -   How?
     -   Enter SNP id, e.g. rs1234 then enter threshold value for upstream and downstream region.
+    -   (optional) if case upload file, The column header name must be 'Probe Set ID' or 'dbSNP RS ID'.
     -   Then, the SNP will categorize the SNPs into the following categories: SNP near or within a gene, SNP outside genes.
     -   Finally, SNP that category is "SNP near or within a gene"  will use to search disease on HUGE, KEGG or KEGG pathways.
 	    """

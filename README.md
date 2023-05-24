@@ -2,9 +2,17 @@
 
 ## Requirements
 
-- Python 3.8
+- Python 3.8 (3.8.16)
 
 ## Local development
+
+- Add secrets file `.streamlit/secrets.toml`
+```toml
+[app_credentials]
+name = "Example Example"
+password = "example"
+username = "root"
+```
 
 - To Run project
 

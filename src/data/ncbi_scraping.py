@@ -110,11 +110,11 @@ NCBI_COLUMNS_INFO = [
     persist=True, allow_output_mutation=True, ttl=60 * 60 * 24, suppress_st_warning=True
 )
 def get_all_genes_info(selected_genes):
-    # st.write("Cache miss: on call get_all_genes_info()")
+    print("Cache miss: on call get_all_genes_info()")
     df = pd.DataFrame({c: pd.Series(dtype=t) for c, t in NCBI_COLUMNS_INFO})
     max_thread = min(len(selected_genes), 20)
     with ThreadPool(max_thread) as pool:
         for result in pool.map(extract, selected_genes):
             result["Date"] = datetime.strptime(result["Date"], "%d-%b-%Y").date()
-            df = df.append(result, ignore_index=True)
+            df = pd.concat([df, pd.DataFrame([result])], ignore_index=True)
     return df

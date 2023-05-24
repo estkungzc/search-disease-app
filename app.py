@@ -19,6 +19,8 @@ from src.utils.data_table import get_base_grid_options
 
 import streamlit_authenticator as stauth
 
+pd.options.mode.chained_assignment = None  # default='warn'
+
 st.set_page_config(
     page_title="Search Disease", page_icon="🍫",
 )

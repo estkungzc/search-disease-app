@@ -391,7 +391,7 @@ for index, row in snp_within_genes.iterrows():
     result = {"gene_id": row["Gene Id"], "gene_symbol": row["Official Symbol"]}
     genes_info_lookup = genes_info_lookup.append(result, ignore_index=True)
 
-    if row["Also known as"]:
+    if isinstance(row["Also known as"], list) and row["Also known as"]:
         for gene_name in row["Also known as"]:
             result = {"gene_id": row["Gene Id"], "gene_symbol": gene_name.upper()}
             genes_info_lookup = genes_info_lookup.append(result, ignore_index=True)

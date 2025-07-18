@@ -3,7 +3,7 @@
 ## Code Style
 - Use 4 spaces for indentation.
 - Prefer double quotes for strings.
-- Keep lines under 88 characters when practical.
+- Keep lines under 88 characters when practical. This follows the Black formatter standard and applies to Python code. For other file types, use your best judgment.
 - Place new source files under the `src/` directory and tests under `tests/`.
 
 ## Commit Messages

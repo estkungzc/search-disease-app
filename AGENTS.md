@@ -10,7 +10,8 @@
 - Write commit messages in the imperative mood, e.g. "Add feature".
 
 ## Testing
-- Run `pytest -q` before committing. Install dependencies from `requirements.txt` if possible.
+- Run `pytest -q` before committing. Install dependencies from `requirements.txt` if possible. 
+  If `requirements.txt` is missing, check with the team for guidance or use `pip freeze > requirements.txt` to generate a new one based on your current environment.
 - If tests fail or dependencies cannot be installed due to environment restrictions, mention this in the PR description.
 
 ## Pull Request Description

@@ -22,7 +22,7 @@ streamlit run .\app.py
 
 ## Reference
 
-- Style for my wep app: https://share.streamlit.io/streamlit/example-app-bert-keyword-extractor/main/app.py
+- Style for my web app: https://share.streamlit.io/streamlit/example-app-bert-keyword-extractor/main/app.py
 
 ## Utils
 

@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import re
+from pathlib import Path
 
 
 from src.data.load_data import (
@@ -148,8 +149,18 @@ with st.form(key="my_form"):
 
         shows = None
         if uploaded_file is not None:
-            file_container = st.expander("Check your uploaded .csv")
-            shows = pd.read_csv(uploaded_file)
+            file_container = st.expander("Check your uploaded file")
+            file_ext = Path(uploaded_file.name).suffix.lower()
+            if file_ext in [".xls", ".xlsx"]:
+                shows = pd.read_excel(uploaded_file)
+            elif file_ext == ".json":
+                shows = pd.read_json(uploaded_file)
+            elif file_ext in [".csv", ".tsv", ".txt"]:
+                sep = "\t" if file_ext == ".tsv" else ","
+                shows = pd.read_csv(uploaded_file, sep=sep)
+            else:
+                st.error("Unsupported file type")
+                st.stop()
             uploaded_file.seek(0)
             file_container.write(shows)
             st.info(f"Found : {len(shows)} records")
